@@ -1,22 +1,21 @@
 {
-  "name": "natuilus-landing-page",
+  "name": "react-blue",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-particles-js": "^2.7.1",
+    "react-scripts": "3.4.0",
+    "typescript": "^3.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
