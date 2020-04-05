@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - node
 
+notifications:
+  slack: nautilus27:KINyb2Dz1Q0BhTOOauVIlTIU
+
 cache:
   yarn: true
   directories:
@@ -10,18 +13,24 @@ cache:
 
 script:
   - yarn build
+  - python3 -VV
+  - pip -V
 
-before_deploy: "echo 'Deploying to nautilusdev.com s3 bucket'"
+before_deploy:
+  - "echo 'Deploying to nautilusdev.com s3 bucket'"
+  # install aws cli
+  - python3 -m pip install --user awscli
+  # Append exe location to our PATH
+  - export PATH=$PATH:$HOME/.local/bin
+
+env:
+  global: PATH=/opt/python/3.7.1/bin:$PATH
 
 deploy:
-  provider: s3
-  access_key_id: "AKIA5BE74LB4NXABBGHB"
-  secret_access_key: $SECRET_ACCESS_KEY
-  bucket: "nautilusdev.com"
-  acl: public_read
+  provider: script
   skip_cleanup: true
-  region: us-west-1
-  local_dir: build
+  on: master
+  script: sh $TRAVIS_BUILD_DIR/scripts/deploy.sh
 
 branches:
   only:
