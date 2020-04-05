@@ -8,6 +8,6 @@ aws configure set aws_access_key_id $ACCESS_KEY_ID
 # set aws_secret_access_key
 aws configure set aws_secret_access_key $SECRET_ACCESS_KEY
 # sync index.html with cache-control
-aws s3 sync ./build/index.html s3://$S3_BUCKET --cache-control max-age=10
+aws s3 cp ./build/index.html s3://$S3_BUCKET/index.html --cache-control max-age=10
 # sync files to s3 bucket, deleteing files that don't match
 aws s3 sync ./build s3://$S3_BUCKET --delete
