@@ -120,6 +120,8 @@ body {
 
 .team-links {
   padding: 1%;
+  position: relative;
+  z-index: 2;
 }
 .team-links a {
   padding: 5%;
