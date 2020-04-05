@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Aris Razuri",
       github: "https://github.com/arazulu",
-      linkedIn: "www.linkedin.com/in/aris-razuri",
+      linkedIn: "https://www.linkedin.com/in/aris-razuri",
       src: "./assets/Aris-Razuri.jpg",
     },
     {
@@ -37,18 +37,24 @@ const Team = () => {
   ];
   const profiles = teamProfile.map((profile) => {
     return (
-      <React.Fragment>
+      <React.Fragment key={profile.name}>
         <div className="teamProfile">
-          <span className="team-icon">
-            <img src={profile.src} alt={profile.name}></img>
-          </span>
-          <div>{profile.name}</div>
-          <div>
-            <a href={profile.github}>
-              <FontAwesomeIcon icon={faGithub} />
+          <div className="team-icon">
+            <img
+              src={profile.src}
+              alt={profile.name}
+              className="animated pulse delay-3s"
+            ></img>
+          </div>
+          <div className="team-profile-title">
+            <h4>{profile.name}</h4>
+          </div>
+          <div className="team-links">
+            <a href={profile.github} target="Blank">
+              <FontAwesomeIcon icon={faGithub} size="4x" color="#e0e9f1" />
             </a>
-            <a href={profile.linkedIn}>
-              <FontAwesomeIcon icon={faLinkedin} />
+            <a href={profile.linkedIn} target="Blank">
+              <FontAwesomeIcon icon={faLinkedin} size="4x" color="#e0e9f1" />
             </a>
           </div>
         </div>
@@ -56,7 +62,12 @@ const Team = () => {
     );
   });
 
-  return <div className="team-wrapper">{profiles}</div>;
+  return (
+    <div className="team-wrapper">
+      <h1>Meet The Team </h1>
+      <div className="team-container">{profiles}</div>
+    </div>
+  );
 };
 
 export default Team;
