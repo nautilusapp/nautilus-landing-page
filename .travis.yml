@@ -3,7 +3,10 @@ language: node_js
 node_js:
   - node
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
 script:
   - yarn build
@@ -19,3 +22,7 @@ deploy:
   skip_cleanup: true
   region: us-west-1
   local_dir: build
+
+  branches:
+    only:
+      - master
