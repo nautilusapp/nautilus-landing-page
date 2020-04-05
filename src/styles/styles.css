@@ -20,11 +20,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
   color: #ffffff;
   font-size: 24px;
@@ -55,8 +55,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1000px;
   margin: 0 auto 20px;
 }
@@ -70,10 +70,8 @@ body {
 }
 
 /* Contribute */
-
 #contribute {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  /* rgb(222, 222, 226, 0.9); */
+  background: linear-gradient(45deg, #dfe9f3, white 100%);
   padding: 40px 0;
   margin-top: 80vh;
   position: relative;
@@ -95,11 +93,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1000px;
   margin: 0 auto 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contribute figure:last-child {
@@ -110,67 +110,80 @@ body {
   padding: 40px;
 }
 
-.github-icon:hover {
+#contribute .github-icon:hover {
   opacity: 0.7;
 }
 
 /* Team */
 .team-wrapper h1 {
   color: #e0e9f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 5%;
   margin-top: 5%;
 }
 
-.team-container {
+.team-wrapper .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-bottom: 5%;
 }
 
-.teamProfile {
+.team-wrapper .team-container .teamProfile {
   color: #e0e9f1;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .team-icon {
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 60%;
-    border: 10px solid transparent;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.3);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.team-wrapper .team-container .teamProfile .team-icon {
+  border-radius: 60%;
+  border: 10px solid transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.team-icon:hover {
-  background-color: #e0e9f1;
-}
-
-.team-icon img {
+.team-wrapper .team-container .teamProfile .team-icon img {
   border-radius: 50%;
   height: 10em;
   width: 10em;
 }
 
-.team-profile-title h4 {
+.team-wrapper .team-container .teamProfile .team-icon:hover {
+  background-color: #e0e9f1;
+}
+
+.team-wrapper .team-container .teamProfile .team-profile-title h4 {
   text-align: center;
   margin-top: 10%;
 }
 
-.team-links {
+.team-wrapper .team-container .teamProfile .team-links {
   padding: 1%;
   position: relative;
   z-index: 2;
 }
-.team-links a {
+
+.team-wrapper .team-container .teamProfile .team-links a {
   padding: 5%;
 }
-
 /*# sourceMappingURL=styles.css.map */
