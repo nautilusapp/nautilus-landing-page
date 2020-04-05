@@ -3,6 +3,9 @@ language: node_js
 node_js:
   - node
 
+notifications:
+  slack: nautilus27:KINyb2Dz1Q0BhTOOauVIlTIU
+
 cache:
   yarn: true
   directories:
