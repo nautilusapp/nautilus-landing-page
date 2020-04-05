@@ -1,8 +1,17 @@
 {
   "name": "nautilus-landing-page",
   "version": "0.1.0",
-  "private": true,
+  "description": "Landing page for Nautilus: A Docker Compose Charting Tool",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nautilusapp/nautilus-landing-page.git"
+  },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
