@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - node
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - yarn build
+
+before_deploy: "echo 'Deploying to nautilusdev.com s3 bucket'"
+
+deploy:
+  provider: s3
+  access_key_id: AKIA5BE74LB4NXABBGHB
+  secret_acces_key:
+    secure: XDfzHaTp0hRJghKWymk5POG1N0tcdPsWJjbebEO20uIfi7nyJI6oT7IXq0Bn3dG5uKYaO2ZJs5c1zSJQ+KZB98uH+cWyF4xGLQTM6hND0BnX/xRXeg8JuJZNvjg3FaJZ8qgviEsiTE/QWBOnHptAZjePX/CF7ue4TImpbZJ2x57ExPeRHulOpuGe8js6cY8zW40GyLRWRSNm6R8mnSZ4pZUEARsQKgn+69itNfPQGz4h2iN4zyxzrWGEvsn9PJezRii93SbMeMeVWUiRT8idSvlR7wPIlaa90q6ZzrGI+mO+GimDMaSdCAQQFV2R3vngI93rIFVPP1+wTmXUy8UXQOVEWtWWpQIg1CFduKPDk74msCUyOi6p+7EJNuThigTVlK+T2V/U2QbaEvZAKWOHl/3vqMg4wF6KMdcaKUiTyMbkpHrDPhR0wyrJW1Mbm5xIjhgJ8RWTIu39Ir8nmplon6L3W55rwy6ubKoseJ5zrCrE8XYfPXNSelDcMdTIxcM6ad3zA03hEw5I8u6qSKCf84vvU1G4diwpQab/BX9b2qA4R8zWaJGZBLw4hwnGC05lwvMAjppJkB8v9S28kJ/PBSezfzSxUaPjOVmhb5T8Wh/FBPdvgBQjbAW8xu4ZCw0ez+u9sCDrPaVo+OBU+bFMaSFQoxL+XAGwhjiPZYXHhRY=
+  bucket: S3 Bucket
+  skip_cleanup: true
+  region: us-west-1
+  local_dir: build
+
+  branches:
+    only:
+      - master
