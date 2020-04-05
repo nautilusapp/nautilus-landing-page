@@ -69,12 +69,58 @@ body {
   padding: 40px;
 }
 
+/* Contribute */
+
+#contribute {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  /* rgb(222, 222, 226, 0.9); */
+  padding: 40px 0;
+  margin-top: 80vh;
+  position: relative;
+}
+
+#contribute h2 {
+  text-align: center;
+  color: #2274a5;
+}
+
+#contribute h4 {
+  text-align: center;
+  color: #2274a5;
+  font-style: italic;
+}
+
+#contribute figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto 20px;
+  justify-content: center;
+}
+
+#contribute figure:last-child {
+  margin-bottom: 0;
+}
+
+#contribute figcaption {
+  padding: 40px;
+}
+
+.github-icon:hover {
+  opacity: 0.7;
+}
+
 /* Team */
 .team-wrapper h1 {
   color: #e0e9f1;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .team-container {
