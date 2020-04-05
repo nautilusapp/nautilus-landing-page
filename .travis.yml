@@ -16,8 +16,7 @@ before_deploy: "echo 'Deploying to nautilusdev.com s3 bucket'"
 deploy:
   provider: s3
   access_key_id: "AKIA5BE74LB4NXABBGHB"
-  secret_access_key:
-    secure: "WZW7dW013IrW9Cq1V/0TgTI6tcZJwP1apXxavke6xU0hkQsLT6NZXj/xb9Eace1nIda4KX12xHlqX0rn3n80UIdQItMGkLCowCdwtcoXUA2AD7IHAu94D68adGGCbEplYpBOcgvY+qdASuWfAdMx1tEiS8PCzwkiJjbLU/0az548DcTuornY9Rrg/udWoyAm5BRkeAiB+WVbMNM9lU4ziq6UbzQ7x6qmc5XfjWf/8gmqopL78U/sbEv5i9gnzN3foTGCa9w5WNDZ2vYenVnk5nBylJGgsd2sWVsQBzCxvA23WsTATyde+kk+Z3uDsbNusvIlRnJVeN5ywjUnTExuFf5fCBcvr2jd+rRShuJZL3dYQLCDzfQZNoYMKiUXMS5DCNqWnrOnkWL1Cphk3ZvGXrQxeQMOEPD3ZbAB2npSAkROYFLDq3IsbRr15LdoRAj9bEGTIpKsjwWxrklDiIUQbFp+eXyQRz97TQXnT5bDbE8Hf8hdxoHNBbe3RkW63Vi+Dcf0+Ed+TZYTrGZYbJbiHymEUewtsLeIaj7Jm7JivIbhGi18KavXO1735H66VL7K9i/YQ+QcMS/VJ5G/jrKH58DUe3GHmMM+2zUjOXkQsRj9MUFJbDdzIRz5CX9gbIBVNknZ9N7SmKvvKxNjnOxdFVQwYJx8s/BfX4+CDV/HHa4="
+  secret_access_key: $SECRET_ACCESS_KEY
   bucket: "nautilusdev.com"
   acl: public_read
   skip_cleanup: true
