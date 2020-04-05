@@ -1,17 +1,18 @@
-import React from 'react';
-import Particles from 'react-particles-js';
-import './styles/styles.css';
-import 'animate.css/animate.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import TopNavBar from './components/TopNavBar.jsx';
-import Hero from './components/Hero';
-import Features from './components/Features.jsx';
+import React from "react";
+import Particles from "react-particles-js";
+import "./styles/styles.css";
+import "animate.css/animate.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import TopNavBar from "./components/TopNavBar.jsx";
+import Hero from "./components/Hero";
+import Features from "./components/Features.jsx";
+import Team from "./components/Team.jsx";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Particles
-        className='landing-bg'
+        className="landing-bg"
         params={{
           particles: {
             number: {
@@ -34,19 +35,19 @@ function App() {
             move: {
               random: true,
               speed: 1,
-              direction: 'top',
-              out_mode: 'out',
+              direction: "top",
+              out_mode: "out",
             },
           },
           interactivity: {
             events: {
               onhover: {
                 enable: true,
-                mode: 'bubble',
+                mode: "bubble",
               },
               onclick: {
                 enable: true,
-                mode: 'repulse',
+                mode: "repulse",
               },
             },
             modes: {
@@ -67,6 +68,7 @@ function App() {
       <TopNavBar />
       <Hero />
       <Features />
+      <Team />
     </div>
   );
 }
