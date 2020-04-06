@@ -30,7 +30,7 @@ const Download = () => {
         </div>
         <div className="download-icon">
           <a
-            href={url + `Nautilus+Setup+${version}.exe`}
+            href={url + `Nautilus Setup ${version}.exe`}
             className="download-icons animated flipInX"
             alt="download-for-windows"
           >

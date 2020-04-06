@@ -8,7 +8,7 @@ const version = process.env.REACT_APP_PACKAGE_VERSION;
 const Hero = () => {
   let file = '';
   if (navigator.appVersion.indexOf('Win') !== -1)
-    file = `Nautilus+Setup+${version}.exe`;
+    file = `Nautilus Setup ${version}.exe`;
   else if (navigator.appVersion.indexOf('Mac') !== -1)
     file = `Nautilus-${version}.dmg`;
   else if (navigator.appVersion.indexOf('Linux') !== -1)
