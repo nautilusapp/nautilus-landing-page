@@ -61,6 +61,35 @@ code {
   }
 }
 
+// ----DOWNLOAD----
+
+#download-title {
+  margin-top: 5%;
+  h2 {
+    color: #e0e9f1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh;
+    font-size: 24px;
+    color: #e0e9f1;
+  }
+  .download-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e9f1;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+}
+
 // features
 #features {
   background-color: ghostwhite;
@@ -87,7 +116,7 @@ code {
   }
 }
 
-/* Contribute */
+// ---CONTRIBUTE---
 
 #contribute {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
@@ -121,7 +150,7 @@ code {
   opacity: 0.7;
 }
 
-/* Team */
+// ----TEAM------
 .team-wrapper h1 {
   color: #e0e9f1;
   display: flex;
@@ -133,14 +162,15 @@ code {
 .team-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
   margin-bottom: 5%;
 }
 
 .teamProfile {
   color: #e0e9f1;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-icon {
@@ -148,9 +178,6 @@ code {
   border: 10px solid transparent;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
   img {
     border-radius: 50%;
@@ -164,14 +191,17 @@ code {
 }
 
 .team-icon:hover {
-  background-color: #e0e9f1;
+  background-color: #2274a5;
 }
 
-.team-icon .team-links {
-  padding: 1%;
-  position: relative;
-  z-index: 2;
+.team-links {
+  display: flex;
+
+  z-index: 1;
   a {
     padding: 5%;
+    :hover {
+      color: #2274a5;
+    }
   }
 }

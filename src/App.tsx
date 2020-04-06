@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features.jsx";
 import Team from "./components/Team.jsx";
 import Contribute from "./components/Contribute.jsx";
+import Download from "./components/Download.jsx";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
       <TopNavBar />
       <Hero />
       <Features />
+      <Download />
       <Contribute />
       <Team />
     </div>
