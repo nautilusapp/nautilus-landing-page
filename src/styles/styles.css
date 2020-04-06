@@ -1,10 +1,35 @@
+@font-face {
+  font-family: 'VisbyRoundCF-Medium';
+  src: url(./fonts/VisbyRoundCF-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'VisbyRoundCF-DemiBold';
+  src: url(./fonts/VisbyRoundCF-DemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'VisbyRoundCF-Bold';
+  src: url(./fonts/VisbyRoundCF-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'VisbyRoundCF-ExtraBold';
+  src: url(./fonts/VisbyRoundCF-ExtraBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'VisbyRoundCF-Heavy';
+  src: url(./fonts/VisbyRoundCF-Heavy.otf) format("opentype");
+}
+
 body {
   height: 100vh;
   width: 100vw;
   background: -webkit-gradient(linear, left top, right top, from(#003459), to(#074f57));
   background: linear-gradient(90deg, #003459, #074f57);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'VisbyRoundCF-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .landing-bg {
@@ -13,6 +38,14 @@ body {
   position: fixed;
   top: 0;
   z-index: -1;
+}
+
+nav {
+  font-weight: 600 !important;
+}
+
+nav .navbar-brand {
+  color: #003459 !important;
 }
 
 #hero {
@@ -34,7 +67,6 @@ body {
 
 #hero h2 {
   font-size: 70px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #hero img {
@@ -69,7 +101,6 @@ body {
 
 #download-title h2 {
   color: #e0e9f1;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -124,38 +155,41 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10vw 2vw;
+  padding: 10vw 0;
 }
 
 #features figure img {
   width: 50%;
+  max-width: 720px;
   height: auto;
-  margin: 0 0.5vw;
+  margin: 0 4vw;
 }
 
-#features figure:first-child {
+#features figure:first-child, #features figure:last-child {
   background-color: #e2e2e2;
+}
+
+#features figure:nth-last-child(2) {
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #features figure:last-child {
   margin-bottom: 0;
-  background-color: #e2e2e2;
 }
 
 #features figcaption {
+  padding: 4vw;
   color: #003459;
-  width: 100%;
-  margin: 0 0.5vw;
   text-align: center;
   font-size: 2.5em;
   font-weight: 750;
   letter-spacing: 0.5px;
 }
 
-#features .second-caption {
+#features figcaption.second-caption {
   color: white;
 }
 
@@ -205,7 +239,6 @@ body {
 }
 
 .github-icon:hover {
-  opacity: 0.9;
   color: #2274a5;
 }
 
