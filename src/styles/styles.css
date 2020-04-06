@@ -23,13 +23,15 @@
   src: url(./fonts/VisbyRoundCF-Heavy.otf) format("opentype");
 }
 
+* {
+  font-family: 'VisbyRoundCF-DemiBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(#003459), to(#074f57));
-  background: linear-gradient(90deg, #003459, #074f57);
+  background: linear-gradient(45deg, #003459, #074f57);
   margin: 0;
-  font-family: 'VisbyRoundCF-Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .landing-bg {
@@ -40,11 +42,8 @@ body {
   z-index: -1;
 }
 
-nav {
-  font-weight: 600 !important;
-}
-
 nav .navbar-brand {
+  font-family: 'VisbyRoundCF-Bold';
   color: #003459 !important;
 }
 
@@ -74,24 +73,34 @@ nav .navbar-brand {
   width: 40%;
 }
 
-#hero button {
+#hero .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hero .button-wrapper button {
   border-style: none;
   border-radius: 5px;
   margin: 20px;
   color: #003459;
 }
 
-#hero button a {
+#hero .button-wrapper button:first-child {
+  margin-left: 0px;
+}
+
+#hero .button-wrapper button a {
   font-style: none;
   color: #003459;
   text-decoration: none;
 }
 
-#hero button:hover {
+#hero .button-wrapper button:hover {
   color: #2274a5;
 }
 
-#hero button:hover a {
+#hero .button-wrapper button:hover a {
   color: #2274a5;
 }
 
@@ -130,6 +139,9 @@ nav .navbar-brand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   text-decoration: none;
   color: #e0e9f1;
 }
@@ -139,12 +151,17 @@ nav .navbar-brand {
 }
 
 #features {
+  background-color: #f6f6f6;
   margin-top: 20vh;
   position: relative;
 }
 
-#features h2 {
+#features h1 {
+  padding-top: 2vw;
+  font-size: 3.5em;
   text-align: center;
+  font-family: 'VisbyRoundCF-Bold';
+  color: #003459;
 }
 
 #features figure {
@@ -155,47 +172,45 @@ nav .navbar-brand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10vw 0;
+  padding: 2vw 0;
+  color: #2274a5;
 }
 
 #features figure img {
   width: 50%;
-  max-width: 720px;
+  min-width: 960px;
   height: auto;
   margin: 0 4vw;
 }
 
-#features figure:first-child, #features figure:last-child {
-  background-color: #e2e2e2;
-}
-
 #features figure:nth-last-child(2) {
   margin: 0;
+  border: 6px solid #f7fbff;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
+#features figure:first-child {
+  padding-top: 4vw;
+}
+
 #features figure:last-child {
+  padding-bottom: 4vw;
   margin-bottom: 0;
 }
 
 #features figcaption {
   padding: 4vw;
-  color: #003459;
+  color: #2274a5;
   text-align: center;
   font-size: 2.5em;
   font-weight: 750;
   letter-spacing: 0.5px;
 }
 
-#features figcaption.second-caption {
-  color: white;
-}
-
 /* Contribute */
 #contribute {
-  background-color: #f7fbff;
   padding-top: 80px;
   padding-bottom: 40px;
   position: relative;
@@ -203,12 +218,12 @@ nav .navbar-brand {
 
 #contribute h1 {
   text-align: center;
-  color: #003459;
+  color: #f7fbff;
 }
 
 #contribute h3 {
   text-align: center;
-  color: #003459;
+  color: #f7fbff;
   font-style: italic;
 }
 
@@ -236,6 +251,7 @@ nav .navbar-brand {
 
 .github-icon {
   color: #003459;
+  color: #f7fbff;
 }
 
 .github-icon:hover {

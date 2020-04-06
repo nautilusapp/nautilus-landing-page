@@ -24,20 +24,19 @@
   src: url(./fonts/VisbyRoundCF-Heavy.otf) format('opentype');
 }
 
-// general
-body {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(90deg, $primary-color, $third-color);
-  margin: 0;
-  font-family: 'VisbyRoundCF-Medium', -apple-system, BlinkMacSystemFont,
+* {
+  font-family: 'VisbyRoundCF-DemiBold', -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
 }
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
+
+// general
+body {
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(45deg, $primary-color, $third-color);
+  margin: 0;
+}
 
 // landing bg
 .landing-bg {
@@ -50,9 +49,9 @@ body {
 
 nav {
   .navbar-brand {
+    font-family: 'VisbyRoundCF-Bold';
     color: $primary-color !important;
   }
-  font-weight: 600 !important;
 }
 // HERO
 #hero {
@@ -60,41 +59,46 @@ nav {
   align-items: center;
   // width: 400px;
   color: $fourth-color;
-  justify-content: space-between;
   // color: #e0e9f1;
+  justify-content: space-between;
   margin: 10vh;
-
   font-size: 24px;
   right: 0;
   left: 0;
   h2 {
     font-size: 70px;
-    // font-family: Arial, Helvetica, sans-serif;
   }
   img {
     height: 40%;
     width: 40%;
   }
-  button {
-    border-style: none;
-    border-radius: 5px;
-    margin: 20px;
-    // color: #003459;
-    color: $primary-color;
-    a {
-      font-style: none;
+  .button-wrapper {
+    display: flex;
+
+    button {
+      border-style: none;
+      border-radius: 5px;
+      margin: 20px;
+      &:first-child {
+        margin-left: 0px;
+      }
       // color: #003459;
       color: $primary-color;
-      text-decoration: none;
-    }
-
-    &:hover {
       a {
+        font-style: none;
+        // color: #003459;
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      &:hover {
+        a {
+          // color: #2274a5;
+          color: $secondary-color;
+        }
         // color: #2274a5;
         color: $secondary-color;
       }
-      // color: #2274a5;
-      color: $secondary-color;
     }
   }
 }
@@ -120,6 +124,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: baseline;
     text-decoration: none;
     color: #e0e9f1;
   }
@@ -130,69 +135,74 @@ nav {
 
 // features
 #features {
+  background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
 
-  h2 {
+  h1 {
+    padding-top: 2vw;
+    font-size: 3.5em;
     text-align: center;
+    font-family: 'VisbyRoundCF-Bold';
+    color: $primary-color;
   }
 
   figure {
     height: auto;
     display: flex;
     align-items: center;
-    padding: 10vw 0;
+    padding: 2vw 0;
+    color: $secondary-color;
 
     img {
       width: 50%;
-      max-width: 720px;
+      min-width: 960px;
       height: auto;
       margin: 0 4vw;
     }
 
-    &:first-child,
-    &:last-child {
-      background-color: rgb(226, 226, 226);
-    }
-
     &:nth-last-child(2) {
       margin: 0;
+      border: 6px solid $fourth-color;
       justify-content: flex-end;
     }
 
+    &:first-child {
+      padding-top: 4vw;
+    }
+
     &:last-child {
+      padding-bottom: 4vw;
       margin-bottom: 0;
     }
   }
 
   figcaption {
     padding: 4vw;
-    color: $primary-color;
+    color: $secondary-color;
     text-align: center;
     font-size: 2.5em;
     font-weight: 750;
     letter-spacing: 0.5px;
-
-    &.second-caption {
-      color: white;
-    }
   }
 }
 
 /* Contribute */
 #contribute {
-  background-color: $fourth-color;
+  // background-color: $fourth-color;
   padding-top: 80px;
   padding-bottom: 40px;
   position: relative;
 
   h1 {
     text-align: center;
-    color: $primary-color;
+    // color: $primary-color;
+    color: $fourth-color;
   }
   h3 {
     text-align: center;
-    color: $primary-color;
+    // color: $primary-color;
+    color: $fourth-color;
     font-style: italic;
   }
   figure {
@@ -212,6 +222,8 @@ nav {
 
 .github-icon {
   color: $primary-color;
+  color: $fourth-color;
+
   &:hover {
     // opacity: 0.8;
     color: $secondary-color;
