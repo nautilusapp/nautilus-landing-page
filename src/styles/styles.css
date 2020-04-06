@@ -12,35 +12,59 @@ body {
   height: 100%;
   position: fixed;
   top: 0;
+  z-index: -1;
 }
 
 #hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
   color: #f7fbff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10vh;
   font-size: 24px;
-  margin: auto;
-  position: absolute;
-  top: 36vh;
   right: 0;
   left: 0;
 }
 
 #hero h2 {
-  font-size: 48px;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero img {
+  height: 45%;
+  width: 45%;
+}
+
+#hero button {
+  border-style: none;
+  border-radius: 5px;
+  margin: 20px;
+  color: #003459;
+}
+
+#hero button a {
+  font-style: none;
+  color: #003459;
+  text-decoration: none;
+}
+
+#hero button:hover {
+  color: #2274a5;
+}
+
+#hero button:hover a {
+  color: #2274a5;
 }
 
 #features {
-  margin-top: 80vh;
+  margin-top: 20vh;
   position: relative;
 }
 
@@ -59,12 +83,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10vw 10vw;
+  padding: 10vw 2vw;
 }
 
 #features figure img {
-  width: 720px;
+  width: 50%;
   height: auto;
+  margin: 0 0.5vw;
 }
 
 #features figure:first-child {
@@ -78,7 +103,8 @@ body {
 
 #features figcaption {
   color: #003459;
-  width: 720px;
+  width: 100%;
+  margin: 0 0.5vw;
   text-align: center;
   font-size: 2.5em;
   font-weight: 750;
@@ -91,7 +117,7 @@ body {
 
 /* Contribute */
 #contribute {
-  background-color: white;
+  background-color: #f7fbff;
   padding-top: 80px;
   padding-bottom: 40px;
   position: relative;
@@ -135,7 +161,8 @@ body {
 }
 
 .github-icon:hover {
-  opacity: 0.7;
+  opacity: 0.9;
+  color: #2274a5;
 }
 
 /* Team */
@@ -211,7 +238,7 @@ body {
   text-align: center;
 }
 
-.team-wrapper .team-container .teamProfile .team-iconhover {
+.team-wrapper .team-container .teamProfile .team-icon:hover {
   background-color: #f7fbff;
 }
 

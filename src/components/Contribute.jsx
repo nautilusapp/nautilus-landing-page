@@ -9,7 +9,7 @@ const Contribute = () => {
       <h1>Contribute to Nautilus</h1>
       <h3>An open source project on Github</h3>
       <figure>
-        <ScrollAnimation animateIn='slideInRight'>
+        <ScrollAnimation animateIn='slideInLeft'>
           <figcaption>
             <a
               href='https://github.com/oslabs-beta/nautilus'
