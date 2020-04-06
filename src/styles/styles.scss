@@ -57,9 +57,7 @@ nav {
 #hero {
   display: flex;
   align-items: center;
-  // width: 400px;
   color: $fourth-color;
-  // color: #e0e9f1;
   justify-content: space-between;
   margin: 10vh;
   font-size: 24px;
@@ -82,21 +80,17 @@ nav {
       &:first-child {
         margin-left: 0px;
       }
-      // color: #003459;
       color: $primary-color;
       a {
         font-style: none;
-        // color: #003459;
         color: $primary-color;
         text-decoration: none;
       }
 
       &:hover {
         a {
-          // color: #2274a5;
           color: $secondary-color;
         }
-        // color: #2274a5;
         color: $secondary-color;
       }
     }
@@ -104,30 +98,36 @@ nav {
 }
 
 // ----DOWNLOAD----
-
 #download-title {
   margin-top: 5%;
+
   h2 {
-    color: #e0e9f1;
-    // font-family: Arial, Helvetica, sans-serif;
+    color: $fourth-color;
     text-align: center;
+    font-size: 2.2em;
   }
+
   #download {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10vh;
-    font-size: 24px;
-    color: #e0e9f1;
+    font-size: 1.5rem;
+    color: $fourth-color;
   }
+
   .download-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: baseline;
     text-decoration: none;
-    color: #e0e9f1;
+    color: $fourth-color;
   }
+  .download-icon {
+    margin: 0 10%;
+  }
+
   a:hover {
     opacity: 0.7;
   }
@@ -138,13 +138,18 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
+  border-top: 6px solid $fourth-color;
 
   h1 {
     padding-top: 2vw;
     font-size: 3.5em;
     text-align: center;
+    letter-spacing: 1px;
     font-family: 'VisbyRoundCF-Bold';
-    color: $primary-color;
+    color: $fourth-color;
+    background-color: $primary-color;
+    padding: 40px 0;
+    margin: 0;
   }
 
   figure {
@@ -155,25 +160,28 @@ nav {
     color: $secondary-color;
 
     img {
-      width: 50%;
-      min-width: 960px;
+      min-width: 50%;
+      width: 960px;
       height: auto;
       margin: 0 4vw;
     }
 
     &:nth-last-child(2) {
       margin: 0;
-      border: 6px solid $fourth-color;
+      border-top: 6px solid $fourth-color;
+      border-bottom: 6px solid $fourth-color;
       justify-content: flex-end;
     }
 
     &:first-child {
       padding-top: 4vw;
+      border-top: 6px solid $fourth-color;
     }
 
     &:last-child {
       padding-bottom: 4vw;
       margin-bottom: 0;
+      border-bottom: 6px solid $fourth-color;
     }
   }
 
@@ -189,20 +197,19 @@ nav {
 
 /* Contribute */
 #contribute {
-  // background-color: $fourth-color;
+  background-color: rgb(246, 246, 246);
+  border: 6px solid $fourth-color;
   padding-top: 80px;
   padding-bottom: 40px;
   position: relative;
 
   h1 {
     text-align: center;
-    // color: $primary-color;
-    color: $fourth-color;
+    color: $primary-color;
   }
   h3 {
     text-align: center;
-    // color: $primary-color;
-    color: $fourth-color;
+    color: $primary-color;
     font-style: italic;
   }
   figure {
@@ -222,10 +229,8 @@ nav {
 
 .github-icon {
   color: $primary-color;
-  color: $fourth-color;
 
   &:hover {
-    // opacity: 0.8;
     color: $secondary-color;
   }
 }
