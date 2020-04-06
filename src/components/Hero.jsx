@@ -12,7 +12,7 @@ const Hero = () => {
   else if (navigator.appVersion.indexOf("Mac") !== -1)
     file = `Nautilus-${version}.dmg`;
   else if (navigator.appVersion.indexOf("Linux") !== -1)
-    file = `Nautilus-${version}.Applmage`;
+    file = `Nautilus-${version}.AppImage`;
 
   const url =
     process.env.NODE_ENV === "production"

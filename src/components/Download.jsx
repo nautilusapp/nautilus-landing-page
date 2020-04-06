@@ -11,7 +11,7 @@ const version = process.env.REACT_APP_PACKAGE_VERSION;
 const Download = () => {
   const url =
     process.env.NODE_ENV === "production"
-      ? "./release"
+      ? "./release/"
       : "https://s3-us-west-1.amazonaws.com/nautilusdev.com/release/";
 
   return (
@@ -20,7 +20,7 @@ const Download = () => {
       <div id="download">
         <div>
           <a
-            href={url + `Nautilus-${version}.Applmage`}
+            href={url + `Nautilus-${version}.AppImage`}
             className="download-icons animated flipInX"
             alt="download-for-linux"
           >
