@@ -1,0 +1,227 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right top, from(#003459), to(#074f57));
+  background: linear-gradient(90deg, #003459, #074f57);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  color: #f7fbff;
+  font-size: 24px;
+  margin: auto;
+  position: absolute;
+  top: 36vh;
+  right: 0;
+  left: 0;
+}
+
+#hero h2 {
+  font-size: 48px;
+}
+
+#features {
+  margin-top: 80vh;
+  position: relative;
+}
+
+#features h2 {
+  text-align: center;
+}
+
+#features figure {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10vw 10vw;
+}
+
+#features figure img {
+  width: 720px;
+  height: auto;
+}
+
+#features figure:first-child {
+  background-color: #e2e2e2;
+}
+
+#features figure:last-child {
+  margin-bottom: 0;
+  background-color: #e2e2e2;
+}
+
+#features figcaption {
+  color: #003459;
+  width: 720px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+}
+
+#features .second-caption {
+  color: white;
+}
+
+/* Contribute */
+#contribute {
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+#contribute h1 {
+  text-align: center;
+  color: #003459;
+}
+
+#contribute h3 {
+  text-align: center;
+  color: #003459;
+  font-style: italic;
+}
+
+#contribute figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contribute figure:last-child {
+  margin-bottom: 0;
+}
+
+#contribute figcaption {
+  padding: 40px;
+}
+
+.github-icon {
+  color: #003459;
+}
+
+.github-icon:hover {
+  opacity: 0.7;
+}
+
+/* Team */
+.team-wrapper h1 {
+  color: #f7fbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.team-wrapper .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 5%;
+}
+
+.team-wrapper .team-container .teamProfile {
+  color: #f7fbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-wrapper .team-container .teamProfile .team-icon {
+  border-radius: 60%;
+  border: 10px solid transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-wrapper .team-container .teamProfile .team-icon img {
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+}
+
+.team-wrapper .team-container .teamProfile .team-icon h4 {
+  text-align: center;
+}
+
+.team-wrapper .team-container .teamProfile .team-iconhover {
+  background-color: #f7fbff;
+}
+
+.team-wrapper .team-container .teamProfile .team-icon .team-links {
+  padding: 1%;
+  position: relative;
+  z-index: 2;
+}
+
+.team-wrapper .team-container .teamProfile .team-icon .team-links a {
+  padding: 5%;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -13,7 +13,7 @@ const Features = () => {
         </figure>
         <figure>
           <ScrollAnimation animateIn='fadeInLeft'>
-            <figcaption>
+            <figcaption className='second-caption'>
               Display your service's info, ports and volumes
             </figcaption>
           </ScrollAnimation>

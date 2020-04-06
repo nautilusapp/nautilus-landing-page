@@ -1,8 +1,10 @@
+@import 'variables';
+
 // general
 body {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
-  background: linear-gradient(45deg, navy, teal);
+  background: linear-gradient(90deg, $primary-color, $third-color);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -26,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  color: #ffffff;
+  color: $fourth-color;
   font-size: 24px;
   margin: auto;
   position: absolute;
@@ -39,13 +41,17 @@ body {
 }
 // features
 #features {
-  background-color: ghostwhite;
-  padding: 40px 0;
-  position: relative;
+  // background-color: rgba(255, 255, 255, 0.8);
+  // background-color: rgb(226, 226, 226);
+  // border-radius: 200px 200px 0 0;
   margin-top: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // margin-right: 10vw;
+  // margin-left: 10vw;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: space-between;
 
   h2 {
     text-align: center;
@@ -55,42 +61,55 @@ body {
     height: auto;
     display: flex;
     align-items: center;
-    padding: 0 10vw;
+    justify-content: space-between;
+    padding: 10vw 10vw;
 
     img {
-      width: 500px;
+      width: 720px;
       height: auto;
+    }
+
+    &:first-child {
+      background-color: rgb(226, 226, 226);
     }
 
     &:last-child {
       margin-bottom: 0;
+      background-color: rgb(226, 226, 226);
     }
   }
 
   figcaption {
-    padding: 40px;
-    width: 500px;
+    // padding: 40px;
+    color: $primary-color;
+    width: 720px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 2.5em;
     font-weight: 750;
     letter-spacing: 0.5px;
+  }
+  .second-caption {
+    color: white;
   }
 }
 
 /* Contribute */
 
 #contribute {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  /* rgb(222, 222, 226, 0.9); */
-  padding: 40px 0;
+  // background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
+  padding-top: 80px;
+  padding-bottom: 40px;
+
   position: relative;
-  h2 {
+
+  h1 {
     text-align: center;
-    color: #2274a5;
+    color: $primary-color;
   }
-  h4 {
+  h3 {
     text-align: center;
-    color: #2274a5;
+    color: $primary-color;
     font-style: italic;
   }
   figure {
@@ -108,14 +127,17 @@ body {
   }
 }
 
-.github-icon:hover {
-  opacity: 0.7;
+.github-icon {
+  color: $primary-color;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 /* Team */
 .team-wrapper {
   h1 {
-    color: #e0e9f1;
+    color: $fourth-color;
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
@@ -130,7 +152,11 @@ body {
     margin-bottom: 5%;
 
     .teamProfile {
-      color: #e0e9f1;
+      color: $fourth-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       .team-icon {
         border-radius: 60%;
@@ -139,6 +165,7 @@ body {
         background-color: rgba(255, 255, 255, 0.3);
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
 
         img {
@@ -149,11 +176,11 @@ body {
 
         h4 {
           text-align: center;
-          margin-top: 10%;
+          // margin-top: 10%;
         }
 
         &hover {
-          background-color: #e0e9f1;
+          background-color: $fourth-color;
         }
 
         .team-links {
