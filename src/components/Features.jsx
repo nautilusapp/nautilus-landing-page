@@ -13,7 +13,9 @@ const Features = () => {
         </figure>
         <figure>
           <ScrollAnimation animateIn='fadeInLeft'>
-            <figcaption>Display your service ports and volumes</figcaption>
+            <figcaption>
+              Display your service's info, ports and volumes
+            </figcaption>
           </ScrollAnimation>
           <img
             src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
