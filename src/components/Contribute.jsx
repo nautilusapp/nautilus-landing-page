@@ -1,15 +1,15 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contribute = () => {
   return (
     <section id="contribute">
-      <h2>Contribute to Nautilus</h2>
-      <h4>An open source project on Github</h4>
+      <h1>Contribute to Nautilus</h1>
+      <h3>An open source project on Github</h3>
       <figure>
-        <ScrollAnimation animateIn="slideInRight">
+        <ScrollAnimation animateIn="slideInLeft">
           <figcaption>
             <a
               href="https://github.com/oslabs-beta/nautilus"

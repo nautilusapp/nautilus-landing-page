@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Navbar,
   Nav,
@@ -6,12 +6,20 @@ import {
   Form,
   FormControl,
   Button,
-} from "react-bootstrap";
+} from 'react-bootstrap';
 
 const TopNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Nautilus</Navbar.Brand>
+    <Navbar
+      bg="light"
+      expand="lg"
+      className="navbar-custom"
+      rel="stylesheet"
+      href="../styles/styles.scss"
+    >
+      <Navbar.Brand className="navbar-custom" href="#home">
+        Nautilus
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
