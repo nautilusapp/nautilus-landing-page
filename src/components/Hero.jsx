@@ -24,22 +24,24 @@ const Hero = () => {
       <div className="animated bounceInLeft">
         <h2>Nautilus</h2>
         <p>A Docker Compose Charting Tool</p>
-        <button>
-          <FontAwesomeIcon icon={faGithub} />
-          <a
-            href="https://github.com/oslabs-beta/nautilus"
-            alt="oslabs-nautilus-github-page"
-            target="Blank"
-          >
-            Github
-          </a>
-        </button>
-        <button>
-          <FontAwesomeIcon icon={faChevronCircleDown} />
-          <a href={url + file} download>
-            Download
-          </a>
-        </button>
+        <div className="button-wrapper">
+          <button>
+            <FontAwesomeIcon icon={faGithub} />
+            <a
+              href="https://github.com/oslabs-beta/nautilus"
+              alt="oslabs-nautilus-github-page"
+              target="Blank"
+            >
+              Github
+            </a>
+          </button>
+          <button>
+            <FontAwesomeIcon icon={faChevronCircleDown} />
+            <a href={url + file} download>
+              Download
+            </a>
+          </button>
+        </div>
       </div>
 
       <img
