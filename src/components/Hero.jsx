@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Hero = () => {
   return (
     <section id="hero">
-      <div>
+      <div className="animated bounceInLeft">
         <h2>Nautilus</h2>
         <p>A Docker Compose Charting Tool</p>
         <button>
@@ -24,7 +24,12 @@ const Hero = () => {
           Download
         </button>
       </div>
-      <img src="../assets/nautilus_main_logo.svg" alt="nautilus-logo" />
+
+      <img
+        className="animated bounceInRight"
+        src="../assets/nautilus_main_logo.svg"
+        alt="nautilus-logo"
+      />
     </section>
   );
 };
