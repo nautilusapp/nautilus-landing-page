@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-import "./styles/styles.css";
+import "./styles/styles.scss";
 import "animate.css/animate.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TopNavBar from "./components/TopNavBar.jsx";
