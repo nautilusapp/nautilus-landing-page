@@ -6,14 +6,21 @@ import {
   faApple,
 } from "@fortawesome/free-brands-svg-icons";
 
+const version = process.env.REACT_APP_PACKAGE_VERSION;
+
 const Download = () => {
+  const url =
+    process.env.NODE_ENV === "production"
+      ? "./release"
+      : "https://s3-us-west-1.amazonaws.com/nautilusdev.com/release/";
+
   return (
     <div id="download-title">
       <h2>Download</h2>
       <div id="download">
         <div>
           <a
-            href="www.google.com"
+            href={url + `Nautilus-${version}.Applmage`}
             className="download-icons animated flipInX"
             alt="download-for-linux"
           >
@@ -23,7 +30,7 @@ const Download = () => {
         </div>
         <div>
           <a
-            href="www.google.com"
+            href={url + `Nautilus+Setup+${version}.exe`}
             className="download-icons animated flipInX"
             alt="download-for-windows"
           >
@@ -33,7 +40,7 @@ const Download = () => {
         </div>
         <div>
           <a
-            href="www.google.com"
+            href={url + `Nautilus-${version}.dmg`}
             className="download-icons animated flipInX"
             alt="download-for-mac"
           >

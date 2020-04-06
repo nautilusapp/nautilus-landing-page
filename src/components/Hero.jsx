@@ -4,7 +4,6 @@ import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const version = process.env.REACT_APP_PACKAGE_VERSION;
-console.log(process.env);
 
 const Hero = () => {
   let file = "";
