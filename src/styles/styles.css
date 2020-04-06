@@ -38,8 +38,8 @@ body {
 }
 
 #hero img {
-  height: 45%;
-  width: 45%;
+  height: 40%;
+  width: 40%;
 }
 
 #hero button {
@@ -61,6 +61,50 @@ body {
 
 #hero button:hover a {
   color: #2274a5;
+}
+
+#download-title {
+  margin-top: 5%;
+}
+
+#download-title h2 {
+  color: #e0e9f1;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#download-title #download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10vh;
+  font-size: 24px;
+  color: #e0e9f1;
+}
+
+#download-title .download-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #e0e9f1;
+}
+
+#download-title a:hover {
+  opacity: 0.7;
 }
 
 #features {

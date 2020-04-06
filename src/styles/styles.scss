@@ -42,8 +42,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   img {
-    height: 45%;
-    width: 45%;
+    height: 40%;
+    width: 40%;
   }
   button {
     border-style: none;
@@ -66,6 +66,35 @@ body {
       // color: #2274a5;
       color: $secondary-color;
     }
+  }
+}
+
+// ----DOWNLOAD----
+
+#download-title {
+  margin-top: 5%;
+  h2 {
+    color: #e0e9f1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh;
+    font-size: 24px;
+    color: #e0e9f1;
+  }
+  .download-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e9f1;
+  }
+  a:hover {
+    opacity: 0.7;
   }
 }
 
