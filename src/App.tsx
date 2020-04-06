@@ -17,12 +17,10 @@ function App() {
         params={{
           particles: {
             number: {
-              value: 60,
-              density: {
-                enable: false,
-              },
+              value: 100,
             },
             size: {
+              // value: 3,
               value: 15,
               random: true,
               anim: {
@@ -44,23 +42,12 @@ function App() {
             events: {
               onhover: {
                 enable: true,
+                // mode: 'repulse',
                 mode: "bubble",
               },
               onclick: {
                 enable: true,
                 mode: "repulse",
-              },
-            },
-            modes: {
-              bubble: {
-                distance: 250,
-                duration: 2,
-                size: 0,
-                opacity: 0,
-              },
-              repulse: {
-                distance: 400,
-                duration: 4,
               },
             },
           },
