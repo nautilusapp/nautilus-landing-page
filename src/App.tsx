@@ -12,9 +12,9 @@ import Download from './components/Download.jsx';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Particles
-        className='landing-bg'
+        className="landing-bg"
         params={{
           particles: {
             number: {

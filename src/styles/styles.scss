@@ -77,10 +77,11 @@ nav {
       border-style: none;
       border-radius: 5px;
       margin: 20px;
+      color: $primary-color;
       &:first-child {
         margin-left: 0px;
       }
-      color: $primary-color;
+
       a {
         font-style: none;
         color: $primary-color;
