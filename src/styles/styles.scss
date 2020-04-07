@@ -44,7 +44,6 @@ body {
     $primary-color,
     teal
   );
-  overflow-x: hidden;
 }
 
 // landing bg
@@ -119,6 +118,8 @@ nav {
   img {
     height: 40%;
     width: 40%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
   }
   .button-wrapper {
     display: flex;
@@ -155,7 +156,7 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
-
+  width: 100%;
   h1 {
     padding-top: 6vh;
     font-size: 3.5em;
@@ -168,7 +169,6 @@ nav {
 
   figure {
     height: auto;
-    width: 100%;
     display: flex;
     align-items: center;
     color: $primary-color;
