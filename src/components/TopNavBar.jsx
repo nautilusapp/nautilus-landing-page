@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from 'react-bootstrap';
+import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 
 const TopNavbar = () => {
   return (
@@ -17,7 +10,10 @@ const TopNavbar = () => {
       rel="stylesheet"
       href="../styles/styles.scss"
     >
-      <img src={process.env.PUBLIC_URL + '/assets/nautilus_logo.svg'} />
+      <img
+        alt="nautilus logo"
+        src={process.env.PUBLIC_URL + '/assets/nautilus_logo.svg'}
+      />
       <Navbar.Brand>Nautilus</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

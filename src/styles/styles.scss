@@ -151,24 +151,15 @@ nav {
   margin-top: 20vh;
   position: relative;
 
-  a {
-    text-decoration: none;
-    cursor: default;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    h1 {
-      padding-top: 2vw;
-      font-size: 3.5em;
-      text-align: center;
-      letter-spacing: 1px;
-      font-family: 'VisbyRoundCF-Bold';
-      color: $primary-color;
-      padding: 40px 0;
-      margin: 0;
-    }
+  h1 {
+    padding-top: 2vw;
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'VisbyRoundCF-Bold';
+    color: $primary-color;
+    padding: 40px 0;
+    margin: 0;
   }
 
   figure {
@@ -256,18 +247,9 @@ nav {
   padding-bottom: 40px;
   position: relative;
 
-  a {
-    text-decoration: none;
-    cursor: default;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    h1 {
-      text-align: center;
-      color: $primary-color;
-    }
+  h1 {
+    text-align: center;
+    color: $primary-color;
   }
 
   h3 {
@@ -303,21 +285,12 @@ nav {
 
 /* Team */
 .team-wrapper {
-  a {
-    text-decoration: none;
-    cursor: default;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    h1 {
-      color: $fourth-color;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 5%;
-      margin-top: 5%;
-    }
+  h1 {
+    color: $fourth-color;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
 
   .team-container {
