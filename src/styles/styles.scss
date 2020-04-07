@@ -36,6 +36,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
   background: linear-gradient(
     45deg,
     rgb(19, 14, 92),
@@ -156,7 +157,6 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
-  width: 100%;
   h1 {
     padding-top: 6vh;
     font-size: 3.5em;
