@@ -88,6 +88,11 @@ nav {
 
   Button {
     margin-right: 10vh;
+    background-color: $primary-color !important;
+
+    &:hover {
+      background-color: $secondary-color !important;
+    }
   }
 }
 
