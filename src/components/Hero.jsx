@@ -18,7 +18,6 @@ const Hero = () => {
     process.env.NODE_ENV === 'production'
       ? './release/'
       : 'https://s3-us-west-1.amazonaws.com/nautilusdev.com/release/';
-
   return (
     <section id="hero">
       <div className="animated bounceInLeft">
