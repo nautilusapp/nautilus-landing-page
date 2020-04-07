@@ -153,52 +153,48 @@ nav {
   position: relative;
 
   h1 {
-    padding-top: 2vw;
+    padding-top: 6vh;
     font-size: 3.5em;
     text-align: center;
     letter-spacing: 1px;
     font-family: 'VisbyRoundCF-Bold';
     color: $primary-color;
-    padding: 40px 0;
     margin: 0;
   }
 
   figure {
     height: auto;
+    width: 100vw;
     display: flex;
     align-items: center;
-    padding: 2vw 0;
     color: $primary-color;
+    padding: 10vh 10vh;
+    margin: 0;
 
     img {
-      min-width: 50%;
-      width: 960px;
+      width: 50vw;
+      max-width: 960px;
       height: auto;
-      margin: 0 4vw;
     }
 
     &:nth-last-child(2) {
-      margin: 0;
       justify-content: flex-end;
     }
 
-    &:first-child {
-      padding-top: 4vw;
-    }
-
     &:last-child {
-      padding-bottom: 4vw;
       margin-bottom: 0;
     }
   }
 
   figcaption {
-    padding: 4vw;
+    padding: 0 1vw;
     color: $primary-color;
     text-align: center;
     font-size: 2.5em;
     font-weight: 750;
     letter-spacing: 0.5px;
+    margin: 0;
+    width: 40vw;
   }
 }
 
@@ -244,8 +240,7 @@ nav {
 /* Contribute */
 #contribute {
   background-color: rgb(246, 246, 246);
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 10vh;
   position: relative;
 
   h1 {
@@ -272,7 +267,7 @@ nav {
   }
 
   figcaption {
-    padding: 40px;
+    padding: 10vh;
   }
 }
 

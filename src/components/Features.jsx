@@ -7,29 +7,44 @@ const Features = () => {
       <h1>Features</h1>
       <div className="figures-wrapper">
         <figure>
-          <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />
+          <div className="img-wrapper">
+            <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />
+          </div>
           <ScrollAnimation animateIn="fadeInRight">
-            <figcaption>Upload your Docker-Compose file</figcaption>
+            <div className="caption-wrapper">
+              <figcaption>Upload your Docker-Compose file</figcaption>
+            </div>
           </ScrollAnimation>
         </figure>
         <figure>
           <ScrollAnimation animateIn="fadeInLeft">
-            <figcaption className="second-caption">
-              Display your service's info, ports and volumes
-            </figcaption>
+            <div className="caption-wrapper">
+              <figcaption className="second-caption">
+                Display your service's info, ports and volumes
+              </figcaption>
+            </div>
           </ScrollAnimation>
-          <img
-            src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
-            alt=""
-          />
+          <div className="img-wrapper">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
+              alt=""
+            />
+          </div>
         </figure>
         <figure>
-          <img src={process.env.PUBLIC_URL + '/assets/viewChange.gif'} alt="" />
+          <div className="img-wrapper">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
+              alt=""
+            />
+          </div>
           <ScrollAnimation animateIn="fadeInRight">
-            <figcaption>
-              Choose to view your services by networks or a container dependent
-              view
-            </figcaption>
+            <div className="caption-wrapper">
+              <figcaption>
+                Choose to view your services by networks or a container
+                dependent view
+              </figcaption>
+            </div>
           </ScrollAnimation>
         </figure>
       </div>
