@@ -34,8 +34,15 @@
 body {
   height: 100%;
   width: 100vw;
-  background: linear-gradient(45deg, $primary-color, $third-color);
   margin: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(19, 14, 92),
+    rgb(0, 5, 78),
+    $primary-color,
+    $primary-color,
+    teal
+  );
 }
 
 // landing bg
@@ -54,6 +61,7 @@ nav {
     margin-left: 10vh;
     width: 4rem !important;
   }
+
   .navbar-brand {
     font-family: 'VisbyRoundCF-Bold';
     font-size: 1.7em;
@@ -71,6 +79,7 @@ nav {
 
     &.active {
       color: rgba(0, 0, 0, 0.5) !important;
+
       &:hover {
         color: $secondary-color !important;
       }
@@ -124,6 +133,7 @@ nav {
         a {
           color: $secondary-color;
         }
+
         color: $secondary-color;
       }
     }
@@ -224,6 +234,7 @@ nav {
     text-decoration: none;
     color: $fourth-color;
   }
+
   .download-icon {
     margin: 0 10%;
   }
