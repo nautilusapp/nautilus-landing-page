@@ -73,7 +73,7 @@ nav {
 
   a {
     font-size: 1.3em;
-    color: #003459 !important;
+    color: $primary-color !important;
     padding-left: 1em;
 
     &:hover {
@@ -82,7 +82,7 @@ nav {
     }
 
     &.active {
-      color: rgba(0, 0, 0, 0.5) !important;
+      color: $primary-color !important;
 
       &:hover {
         color: $secondary-color !important;
