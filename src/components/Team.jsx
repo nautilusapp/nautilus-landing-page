@@ -41,10 +41,13 @@ const Team = () => {
     },
   ];
   const profiles = teamProfile.map((profile) => {
-    const changeImgOver = (e) => {
+    const changeImgEnter = (e) => {
+      e.currentTarget.className = 'animated bounceIn';
       return (e.currentTarget.src = profile.src);
     };
-    const changeImgOut = (e) => {
+
+    const changeImgLeave = (e) => {
+      e.currentTarget.className = '';
       return (e.currentTarget.src = profile.avatar);
     };
     return (
@@ -54,9 +57,8 @@ const Team = () => {
             <img
               src={profile.avatar}
               alt={profile.name}
-              onMouseOver={changeImgOver}
-              onMouseOut={changeImgOut}
-              className="animated pulse delay-3s"
+              onMouseEnter={changeImgEnter}
+              onMouseLeave={changeImgLeave}
             ></img>
           </div>
           <div className="team-profile-title">
@@ -64,10 +66,10 @@ const Team = () => {
           </div>
           <div className="team-links">
             <a href={profile.github} target="Blank">
-              <FontAwesomeIcon icon={faGithub} size="4x" color="#e0e9f1" />
+              <FontAwesomeIcon icon={faGithub} size="3x" color="#e0e9f1" />
             </a>
             <a href={profile.linkedIn} target="Blank">
-              <FontAwesomeIcon icon={faLinkedin} size="4x" color="#e0e9f1" />
+              <FontAwesomeIcon icon={faLinkedin} size="3x" color="#e0e9f1" />
             </a>
           </div>
         </div>
@@ -84,11 +86,3 @@ const Team = () => {
 };
 
 export default Team;
-
-{
-  /* <img
-src={profile.src}
-alt={profile.name}
-className="animated pulse delay-3s"
-></img> */
-}
