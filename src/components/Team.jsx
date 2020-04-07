@@ -64,7 +64,9 @@ const Team = () => {
 
   return (
     <div className="team-wrapper">
-      <h1>Meet The Team </h1>
+      <a href="" id="team">
+        <h1>Meet The Team</h1>
+      </a>
       <div className="team-container">{profiles}</div>
     </div>
   );
