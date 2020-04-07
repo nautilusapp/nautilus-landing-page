@@ -34,7 +34,7 @@
 // general
 body {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background: linear-gradient(
     45deg,
@@ -44,6 +44,7 @@ body {
     $primary-color,
     teal
   );
+  overflow-x: hidden;
 }
 
 // landing bg
@@ -167,7 +168,7 @@ nav {
 
   figure {
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     color: $primary-color;
