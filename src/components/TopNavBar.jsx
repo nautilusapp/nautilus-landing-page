@@ -1,5 +1,8 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Link as LinkScroll } from 'react-scroll';
+=======
+>>>>>>> dbb5bbf763c389eeed60c1b64834fc02a3895c19
 import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 
 const TopNavbar = () => {
@@ -11,7 +14,10 @@ const TopNavbar = () => {
       rel="stylesheet"
       href="../styles/styles.scss"
     >
-      <img src={process.env.PUBLIC_URL + '/assets/nautilus_logo.svg'} />
+      <img
+        alt="nautilus logo"
+        src={process.env.PUBLIC_URL + '/assets/nautilus_logo.svg'}
+      />
       <Navbar.Brand>Nautilus</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

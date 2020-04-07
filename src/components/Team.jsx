@@ -78,8 +78,13 @@ const Team = () => {
   });
 
   return (
+<<<<<<< HEAD
     <div className="team-wrapper" id="team">
       <h1>Meet The Team</h1>
+=======
+    <div className="team-wrapper">
+      <h1 id="team">Meet The Team</h1>
+>>>>>>> dbb5bbf763c389eeed60c1b64834fc02a3895c19
       <div className="team-container">{profiles}</div>
     </div>
   );
