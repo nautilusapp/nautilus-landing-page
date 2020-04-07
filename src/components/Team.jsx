@@ -78,10 +78,8 @@ const Team = () => {
   });
 
   return (
-    <div className="team-wrapper">
-      <a href="" id="team">
-        <h1>Meet The Team</h1>
-      </a>
+    <div className="team-wrapper" id="team">
+      <h1>Meet The Team</h1>
       <div className="team-container">{profiles}</div>
     </div>
   );

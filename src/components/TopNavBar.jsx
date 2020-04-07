@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from 'react-bootstrap';
+import { Link as LinkScroll } from 'react-scroll';
+import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 
 const TopNavbar = () => {
   return (
@@ -22,9 +16,15 @@ const TopNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#contribute">Contribute</Nav.Link>
-          <Nav.Link href="#team">Team</Nav.Link>
+          <LinkScroll to="features" smooth={true}>
+            Features
+          </LinkScroll>
+          <LinkScroll to="contribute" smooth={true}>
+            Contribute
+          </LinkScroll>
+          <LinkScroll to="team" smooth={true}>
+            Team
+          </LinkScroll>
         </Nav>
         <Form inline>
           <Button>Download</Button>
