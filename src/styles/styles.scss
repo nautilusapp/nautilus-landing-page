@@ -1,4 +1,5 @@
 @import 'variables';
+
 @font-face {
   font-family: 'VisbyRoundCF-Medium';
   src: url(./fonts/VisbyRoundCF-Medium.otf) format('opentype');
@@ -274,6 +275,7 @@ nav {
           border-radius: 50%;
           height: 10em;
           width: 10em;
+          z-index: 2;
         }
 
         h4 {
@@ -283,15 +285,16 @@ nav {
         &:hover {
           background-color: $fourth-color;
         }
-
-        .team-links {
-          padding: 1%;
-          position: relative;
-          z-index: 2;
-
-          a {
-            padding: 5%;
-          }
+      }
+      .team-links {
+        padding: 1%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        svg:hover {
+          color: $secondary-color;
         }
       }
     }
