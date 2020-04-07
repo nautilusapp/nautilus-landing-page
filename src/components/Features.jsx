@@ -4,7 +4,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Features = () => {
   return (
     <section id="features">
-      <h1>Features</h1>
+      <a href="" id="features">
+        <h1>Features</h1>
+      </a>
       <div className="figures-wrapper">
         <figure>
           <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />

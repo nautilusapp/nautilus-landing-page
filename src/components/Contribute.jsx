@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Contribute = () => {
   return (
     <section id="contribute">
-      <h1>Contribute to Nautilus</h1>
+      <a href="" id="contribute">
+        <h1>Contribute to Nautilus</h1>
+      </a>
       <h3>An open source project on Github</h3>
       <figure>
         <ScrollAnimation animateIn="slideInLeft">
