@@ -1,33 +1,34 @@
-@import 'variables';
+@import "variables";
+
 @font-face {
-  font-family: 'VisbyRoundCF-Medium';
-  src: url(./fonts/VisbyRoundCF-Medium.otf) format('opentype');
+  font-family: "VisbyRoundCF-Medium";
+  src: url(./fonts/VisbyRoundCF-Medium.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-DemiBold';
-  src: url(./fonts/VisbyRoundCF-DemiBold.otf) format('opentype');
+  font-family: "VisbyRoundCF-DemiBold";
+  src: url(./fonts/VisbyRoundCF-DemiBold.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-Bold';
-  src: url(./fonts/VisbyRoundCF-Bold.otf) format('opentype');
+  font-family: "VisbyRoundCF-Bold";
+  src: url(./fonts/VisbyRoundCF-Bold.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-ExtraBold';
-  src: url(./fonts/VisbyRoundCF-ExtraBold.otf) format('opentype');
+  font-family: "VisbyRoundCF-ExtraBold";
+  src: url(./fonts/VisbyRoundCF-ExtraBold.otf) format("opentype");
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-Heavy';
-  src: url(./fonts/VisbyRoundCF-Heavy.otf) format('opentype');
+  font-family: "VisbyRoundCF-Heavy";
+  src: url(./fonts/VisbyRoundCF-Heavy.otf) format("opentype");
 }
 
 * {
-  font-family: 'VisbyRoundCF-DemiBold', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: "VisbyRoundCF-DemiBold", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 // general
@@ -49,7 +50,7 @@ body {
 
 nav {
   .navbar-brand {
-    font-family: 'VisbyRoundCF-Bold';
+    font-family: "VisbyRoundCF-Bold";
     color: $primary-color !important;
   }
 }
@@ -146,7 +147,7 @@ nav {
     font-size: 3.5em;
     text-align: center;
     letter-spacing: 1px;
-    font-family: 'VisbyRoundCF-Bold';
+    font-family: "VisbyRoundCF-Bold";
     color: $fourth-color;
     background-color: $primary-color;
     padding: 40px 0;
@@ -287,7 +288,7 @@ nav {
         .team-links {
           padding: 1%;
           position: relative;
-          z-index: 2;
+          z-index: 1;
 
           a {
             padding: 5%;

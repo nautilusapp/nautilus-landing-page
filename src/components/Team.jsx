@@ -8,41 +8,54 @@ const Team = () => {
       name: 'Joshua Nordstrom',
       github: 'https://www.github.com/jdnordy',
       linkedIn: 'https://www.linkedin.com/in/jdnordy/',
+      avatar: './assets/joshua-avatar.svg',
       src: './assets/Joshua-Nordstrom.jpg',
     },
     {
       name: 'Tyler Hurtt',
       github: 'http://github.com/tylerhurtt',
       linkedIn: 'https://www.linkedin.com/in/tylerhurtt',
+      avatar: './assets/tyler-avatar5.svg',
       src: './assets/Tyler-Hurtt.jpg',
     },
     {
       name: 'Aris Razuri',
       github: 'https://github.com/arazulu',
       linkedIn: 'https://www.linkedin.com/in/aris-razuri',
+      avatar: './assets/aris-avatar.svg',
       src: './assets/Aris-Razuri.jpg',
     },
     {
       name: 'Danny Scheiner',
       github: 'https://github.com/dannyscheiner',
       linkedIn: 'https://www.linkedin.com/in/dannyscheiner/',
+      avatar: './assets/dannyboy.svg',
       src: './assets/Danny.svg',
     },
     {
       name: 'Michael Dinh',
       github: 'https://github.com/michaelbayday',
       linkedIn: 'https://www.linkedin.com/in/michaelxdinh/',
+      avatar: './assets/Mike.svg',
       src: './assets/Mike.svg',
     },
   ];
   const profiles = teamProfile.map((profile) => {
+    const changeImgOver = (e) => {
+      return (e.currentTarget.src = profile.src);
+    };
+    const changeImgOut = (e) => {
+      return (e.currentTarget.src = profile.avatar);
+    };
     return (
       <React.Fragment key={profile.name}>
         <div className="teamProfile">
           <div className="team-icon">
             <img
-              src={profile.src}
+              src={profile.avatar}
               alt={profile.name}
+              onMouseOver={changeImgOver}
+              onMouseOut={changeImgOut}
               className="animated pulse delay-3s"
             ></img>
           </div>
@@ -71,3 +84,11 @@ const Team = () => {
 };
 
 export default Team;
+
+{
+  /* <img
+src={profile.src}
+alt={profile.name}
+className="animated pulse delay-3s"
+></img> */
+}
