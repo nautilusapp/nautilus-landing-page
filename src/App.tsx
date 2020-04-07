@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import './styles/styles.scss';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TopNavBar from './components/TopNavBar.jsx';
+import TopNavBar from './components/TopNavBar';
 import Hero from './components/Hero';
 import Features from './components/Features.jsx';
 import Team from './components/Team.jsx';

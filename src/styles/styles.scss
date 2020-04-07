@@ -71,11 +71,14 @@ nav {
     cursor: default !important;
   }
 
-  .nav-link {
-    font-size: 1.4em;
+  a {
+    font-size: 1.3em;
+    color: #003459 !important;
+    padding-left: 1em;
 
     &:hover {
       color: $secondary-color !important;
+      cursor: pointer;
     }
 
     &.active {
