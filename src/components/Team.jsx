@@ -79,7 +79,7 @@ const Team = () => {
 
   return (
     <div className="team-wrapper">
-      <h1>Meet The Team </h1>
+      <h1 id="team">Meet The Team</h1>
       <div className="team-container">{profiles}</div>
     </div>
   );
