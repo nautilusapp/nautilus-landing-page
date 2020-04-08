@@ -34,8 +34,9 @@
 // general
 body {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 0;
+  overflow-x: hidden;
   background: linear-gradient(
     45deg,
     rgb(19, 14, 92),
@@ -57,7 +58,7 @@ body {
 
 nav {
   background-color: rgb(246, 246, 246) !important;
-  padding: 0 !important;
+  padding: 0.5vh 0 !important;
 
   img {
     margin-left: 10vh;
@@ -119,6 +120,8 @@ nav {
   img {
     height: 40%;
     width: 40%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
   }
   .button-wrapper {
     display: flex;
@@ -155,7 +158,6 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
-
   h1 {
     padding-top: 6vh;
     font-size: 3.5em;
@@ -168,7 +170,6 @@ nav {
 
   figure {
     height: auto;
-    width: 100vw;
     display: flex;
     align-items: center;
     color: $primary-color;
