@@ -30,7 +30,9 @@ const TopNavbar = () => {
           </LinkScroll>
         </Nav>
         <Form inline>
-          <Button>Download</Button>
+          <LinkScroll to="download-title" smooth={true}>
+            <Button>Download</Button>
+          </LinkScroll>
         </Form>
       </Navbar.Collapse>
     </Navbar>

@@ -206,11 +206,11 @@ nav {
 #download-title {
   margin-top: 5%;
 
-  h2 {
+  h1 {
     font-style: 'VisbyRoundCF-Bold';
     color: $fourth-color;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.5em;
     letter-spacing: 0.5px;
   }
 
@@ -250,12 +250,15 @@ nav {
   h1 {
     text-align: center;
     color: $primary-color;
+    font-style: 'VisbyRoundCF-Bold';
+    font-size: 2.5em;
   }
 
   h3 {
     text-align: center;
     color: $primary-color;
     font-style: italic;
+    font-style: 'VisbyRoundCF-Bold';
   }
 
   figure {
@@ -289,6 +292,8 @@ nav {
     color: $fourth-color;
     display: flex;
     justify-content: center;
+    font-style: 'VisbyRoundCF-Bold';
+    font-size: 2.5em;
     margin-bottom: 5%;
     margin-top: 5%;
   }
