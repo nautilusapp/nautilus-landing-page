@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="animated bounceInLeft">
-        <h2>Nautilus</h2>
+        <h1>Nautilus</h1>
         <p>A Docker Compose Charting Tool</p>
         <div className="button-wrapper">
           <button>
