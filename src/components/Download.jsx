@@ -16,7 +16,7 @@ const Download = () => {
 
   return (
     <div id="download-title">
-      <h2>Download</h2>
+      <h1>Download</h1>
       <div id="download">
         <div className="download-icon">
           <a

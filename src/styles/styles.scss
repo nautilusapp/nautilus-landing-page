@@ -1,34 +1,22 @@
 @import 'variables';
 
 @font-face {
-  font-family: 'VisbyRoundCF-Medium';
-  src: url(./fonts/VisbyRoundCF-Medium.otf) format('opentype');
+  font-family: 'Sen-Regular';
+  src: url(./fonts/Sen-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-DemiBold';
-  src: url(./fonts/VisbyRoundCF-DemiBold.otf) format('opentype');
+  font-family: 'Sen-Bold';
+  src: url(./fonts/Sen-Bold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'VisbyRoundCF-Bold';
-  src: url(./fonts/VisbyRoundCF-Bold.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'VisbyRoundCF-ExtraBold';
-  src: url(./fonts/VisbyRoundCF-ExtraBold.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'VisbyRoundCF-Heavy';
-  src: url(./fonts/VisbyRoundCF-Heavy.otf) format('opentype');
+  font-family: 'Sen-ExtraBold';
+  src: url(./fonts/Sen-ExtraBold.ttf) format('truetype');
 }
 
 * {
-  font-family: 'VisbyRoundCF-DemiBold', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: $font-fam;
 }
 
 // general
@@ -65,7 +53,8 @@ nav {
   }
 
   .navbar-brand {
-    font-family: 'VisbyRoundCF-Bold';
+    font-family: $font-fam;
+    font-weight: 600;
     font-size: 1.7em;
     letter-spacing: 0.8px;
     color: $primary-color !important;
@@ -159,10 +148,10 @@ nav {
   position: relative;
   h1 {
     padding-top: 6vh;
-    font-size: 3.5em;
+    font-size: 3em;
     text-align: center;
     letter-spacing: 1px;
-    font-family: 'VisbyRoundCF-Bold';
+    font-family: $font-fam;
     color: $primary-color;
     margin: 0;
   }
@@ -178,6 +167,8 @@ nav {
     img {
       width: 50vw;
       height: auto;
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);
     }
 
     &:nth-last-child(2) {
@@ -193,8 +184,8 @@ nav {
     padding: 0 1vw;
     color: $primary-color;
     text-align: center;
-    font-size: 2.5em;
-    font-weight: 750;
+    font-size: 2em;
+    font-weight: 600;
     letter-spacing: 0.5px;
     margin: 0;
     width: 40vw;
@@ -205,11 +196,11 @@ nav {
 #download-title {
   margin-top: 5%;
 
-  h2 {
-    font-style: 'VisbyRoundCF-Bold';
+  h1 {
+    font-style: $font-fam;
     color: $fourth-color;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 3em;
     letter-spacing: 0.5px;
   }
 
@@ -249,6 +240,7 @@ nav {
   h1 {
     text-align: center;
     color: $primary-color;
+    font-size: 3em;
   }
 
   h3 {
@@ -290,6 +282,7 @@ nav {
     justify-content: center;
     margin-bottom: 5%;
     margin-top: 5%;
+    font-size: 3em;
   }
 
   .team-container {
@@ -316,6 +309,16 @@ nav {
         align-items: center;
         justify-content: center;
 
+        .actual-pic {
+          display: none;
+        }
+        .surround:hover [class='avatar'] {
+          display: none;
+        }
+        .surround:hover [class='actual-pic'] {
+          display: block;
+        }
+
         img {
           border-radius: 50%;
           height: 10em;
@@ -331,6 +334,7 @@ nav {
           background-color: $fourth-color;
         }
       }
+
       .team-links {
         padding: 1%;
         position: relative;

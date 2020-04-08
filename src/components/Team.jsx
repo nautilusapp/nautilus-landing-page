@@ -41,25 +41,22 @@ const Team = () => {
     },
   ];
   const profiles = teamProfile.map((profile) => {
-    const changeImgEnter = (e) => {
-      e.currentTarget.className = 'animated bounceIn';
-      return (e.currentTarget.src = profile.src);
-    };
-
-    const changeImgLeave = (e) => {
-      e.currentTarget.className = '';
-      return (e.currentTarget.src = profile.avatar);
-    };
     return (
       <React.Fragment key={profile.name}>
         <div className="teamProfile">
           <div className="team-icon">
-            <img
-              src={profile.avatar}
-              alt={profile.name}
-              onMouseEnter={changeImgEnter}
-              onMouseLeave={changeImgLeave}
-            ></img>
+            <span className="surround">
+              <img
+                src={profile.avatar}
+                alt={profile.name}
+                className="avatar"
+              ></img>
+              <img
+                src={profile.src}
+                alt={profile.name}
+                className="actual-pic"
+              ></img>
+            </span>
           </div>
           <div className="team-profile-title">
             <h4>{profile.name}</h4>
@@ -80,7 +77,7 @@ const Team = () => {
   return (
     <div className="team-wrapper">
       <h1 id="team">Meet The Team</h1>
-      <div className="team-container">{profiles}</div>
+      <div className="team-container">{profiles}</div>git
     </div>
   );
 };
