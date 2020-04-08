@@ -135,6 +135,11 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
+
+  .sep10 {
+    transform: translateY(-100%) translateY(2px) scale(1, 1);
+    transform-origin: top;
+  }
   h1 {
     padding-top: 6vh;
     font-size: 3em;
@@ -222,10 +227,21 @@ nav {
 #contribute {
   background-color: rgb(246, 246, 246);
   padding-top: 10vh;
+  padding-bottom: 10vh;
   position: relative;
   color: $primary-color;
   text-align: center;
-
+  display: flex;
+  justify-content: space-around;
+  div {
+    flex-grow: 1;
+  }
+  #line {
+    border-left: 6px solid $primary-color;
+    height: inherit;
+    left: 50%;
+    top: 0;
+  }
   h1 {
     font-size: 3em;
   }
@@ -235,7 +251,8 @@ nav {
   }
 
   figure {
-    display: flex;
+    // display: flex;
+    // flex-direction: row;
     align-items: center;
     width: 100%;
     margin: 0 auto 20px;
