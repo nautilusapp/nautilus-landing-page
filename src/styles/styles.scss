@@ -309,6 +309,16 @@ nav {
         align-items: center;
         justify-content: center;
 
+        .actual-pic {
+          display: none;
+        }
+        .surround:hover [class='avatar'] {
+          display: none;
+        }
+        .surround:hover [class='actual-pic'] {
+          display: block;
+        }
+
         img {
           border-radius: 50%;
           height: 10em;
@@ -324,6 +334,7 @@ nav {
           background-color: $fourth-color;
         }
       }
+
       .team-links {
         padding: 1%;
         position: relative;
