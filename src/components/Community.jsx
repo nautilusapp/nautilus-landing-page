@@ -3,9 +3,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { faGithubSquare, faSlack } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Contribute = () => {
+const Community = () => {
   return (
-    <section id="contribute">
+    <section id="community">
       <div>
         <h2>Contribute to Nautilus</h2>
         <h3>An open source project on Github</h3>
@@ -54,4 +54,4 @@ const Contribute = () => {
   );
 };
 
-export default Contribute;
+export default Community;

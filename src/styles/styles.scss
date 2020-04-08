@@ -78,6 +78,16 @@ nav {
   }
 }
 
+//Slack Nav//
+
+.slack-nav-icon {
+  color: #003459;
+
+  &:hover {
+    color: #2274a5;
+  }
+}
+
 // HERO
 #hero {
   display: flex;
@@ -135,13 +145,26 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
+  .svg-separator {
+    display: block;
+    background: 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    -webkit-transform: translateY(-100%) translateY(2px);
+    transform: translateY(-100%) translateY(2px);
+    width: 100%;
+  }
 
   .sep10 {
     transform: translateY(-100%) translateY(2px) scale(1, 1);
     transform-origin: top;
+    display: block;
   }
   h1 {
-    padding-top: 6vh;
+    padding-top: 5vh;
     font-size: 3em;
     text-align: center;
     letter-spacing: 0.5px;
@@ -223,8 +246,8 @@ nav {
   }
 }
 
-/* Contribute */
-#contribute {
+/* Community */
+#community {
   background-color: rgb(246, 246, 246);
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -315,6 +338,7 @@ nav {
         .actual-pic {
           display: none;
         }
+
         .surround:hover [class='avatar'] {
           display: none;
         }

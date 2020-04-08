@@ -8,7 +8,6 @@ const Features = () => {
         preserveAspectRatio="xMidYMax meet"
         className="svg-separator sep10"
         viewBox="0 0 1600 200"
-        style={{ display: 'block' }}
         data-height="200"
       >
         <path

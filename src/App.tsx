@@ -7,7 +7,7 @@ import TopNavBar from './components/TopNavBar';
 import Hero from './components/Hero';
 import Features from './components/Features.jsx';
 import Team from './components/Team.jsx';
-import Contribute from './components/Contribute.jsx';
+import Community from './components/Community.jsx';
 import Download from './components/Download.jsx';
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
       <Hero />
       <Features />
       <Download />
-      <Contribute />
+      <Community />
       <Team />
     </div>
   );
