@@ -12,7 +12,7 @@ const Features = () => {
           </div>
           <ScrollAnimation animateIn="fadeInRight">
             <div className="caption-wrapper">
-              <figcaption>Upload your Docker-Compose file</figcaption>
+              <figcaption>Upload your Compose file</figcaption>
             </div>
           </ScrollAnimation>
         </figure>
