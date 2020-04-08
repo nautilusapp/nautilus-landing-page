@@ -256,9 +256,8 @@ nav {
   text-align: center;
   display: flex;
   justify-content: space-around;
-  div {
-    flex-grow: 1;
-  }
+  flex-direction: column;
+
   #line {
     border-left: 6px solid $primary-color;
     height: inherit;
@@ -266,7 +265,8 @@ nav {
     top: 0;
   }
   h1 {
-    font-size: 3em;
+    margin-bottom: 10vh;
+    font-size: 48px;
   }
 
   h3 {
@@ -274,8 +274,8 @@ nav {
   }
 
   figure {
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     margin: 0 auto 20px;
@@ -286,8 +286,23 @@ nav {
     margin-bottom: 0;
   }
 
+  .figure-wrapper {
+    width: 50%;
+  }
+
   figcaption {
     padding: 10vh;
+  }
+}
+#community-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#figure-wrapper2 {
+  margin-top: 25px;
+  h2 {
+    margin-bottom: 3%;
   }
 }
 
