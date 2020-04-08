@@ -95,6 +95,9 @@ nav {
   Button {
     margin-right: 10vh;
     background-color: $primary-color !important;
+    font-size: 0.9em !important;
+    border-radius: 5px !important;
+    font-family: 'VisbyRoundCF-Bold' !important;
 
     &:hover {
       background-color: $secondary-color !important;
@@ -261,7 +264,7 @@ nav {
     text-align: center;
     color: $primary-color;
     font-style: italic;
-    font-style: 'VisbyRoundCF-Bold';
+    font-family: 'VisbyRoundCF-Bold';
   }
 
   figure {
