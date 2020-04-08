@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Carousel, CarouselItem } from 'react-bootstrap';
 
 const Features = () => {
   return (
@@ -45,17 +46,31 @@ const Features = () => {
             </video>
           </div>
           <ScrollAnimation animateIn="fadeInRight">
+        <Carousel>
+          <Carousel.Item>
+            <div className="img-wrapper">
+              <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />
+            </div>
+
             <div className="caption-wrapper">
               <figcaption>Upload your Compose file</figcaption>
             </div>
-          </ScrollAnimation>
-        </figure>
-        <figure>
-          <ScrollAnimation animateIn="fadeInLeft">
-            <div className="caption-wrapper">
-              <figcaption className="second-caption">
-                Display your service's info, ports and volumes
-              </figcaption>
+          </Carousel.Item>
+        </Carousel>
+        <Carousel.Item>
+          <figure>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <div className="caption-wrapper">
+                <figcaption className="second-caption">
+                  Display your service's info, ports and volumes
+                </figcaption>
+              </div>
+            </ScrollAnimation>
+            <div className="img-wrapper">
+              <img
+                src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
+                alt=""
+              />
             </div>
           </ScrollAnimation>
           <div className="img-wrapper">
@@ -78,9 +93,26 @@ const Features = () => {
                 Choose to view your services by networks or a container
                 dependent view
               </figcaption>
+          </figure>
+        </Carousel.Item>
+        <Carousel.Item>
+          <figure>
+            <div className="img-wrapper">
+              <img
+                src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
+                alt=""
+              />
             </div>
-          </ScrollAnimation>
-        </figure>
+            <ScrollAnimation animateIn="fadeInRight">
+              <div className="caption-wrapper">
+                <figcaption>
+                  Choose to view your services by networks or a container
+                  dependent view
+                </figcaption>
+              </div>
+            </ScrollAnimation>
+          </figure>
+        </Carousel.Item>
       </div>
     </section>
   );
