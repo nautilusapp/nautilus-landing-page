@@ -44,10 +44,7 @@ const Features = () => {
         <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/upload.webm" type="video/webm" />
-                <source src="./assets/upload.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/upload-g.gif" alt="" className="update" />
             </div>
             <Carousel.Caption>
               <h2>Upload your Compose file</h2>
@@ -56,10 +53,7 @@ const Features = () => {
 
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/optionsChange.webm" type="video/webm" />
-                <source src="./assets/optionsChange.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/options-g.gif" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>Display your service's info, ports and volumes</h2>
@@ -67,10 +61,7 @@ const Features = () => {
           </Carousel.Item>
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/viewChange.webm" type="video/webm" />
-                <source src="./assets/viewChange.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/views-g.gif" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>
