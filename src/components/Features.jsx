@@ -51,7 +51,12 @@ const Features = () => {
           <ScrollAnimation animateIn="fadeInRight">
         <Carousel>
       <div className="carousel-wrapper">
-        <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          interval="5000"
+          pause="hover"
+        >
           <Carousel.Item as="div">
             <img
               src={process.env.PUBLIC_URL + '/assets/upload.gif'}

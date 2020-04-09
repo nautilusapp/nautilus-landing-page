@@ -192,22 +192,31 @@ nav {
   .carousel-wrapper {
     img {
       color: #003459 !important;
-      height: 60%;
-      width: 60%;
+      height: 55%;
+      width: 55%;
       margin-bottom: 15%;
       margin-left: 22%;
       margin-top: 7%;
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);
     }
   }
 
   .carousel-control-prev-icon {
-    background-color: $primary-color !important;
+    width: 40% !important;
+    height: 40% !important;
+    background-image: url(/assets/arrow.svg);
+    transform: rotate(90deg) !important;
   }
   .carousel-control-next-icon {
-    background-color: $primary-color !important;
+    width: 40% !important;
+    height: 40% !important;
+    background-image: url(/assets/arrow.svg);
+    transform: rotate(270deg) !important;
   }
   .carousel-caption {
     color: $primary-color;
+    margin-top: 10%;
   }
   .carousel-indicators li {
     background-color: $primary-color !important;
