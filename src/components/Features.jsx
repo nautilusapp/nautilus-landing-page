@@ -43,8 +43,8 @@ const Features = () => {
       <div className="carousel-wrapper">
         <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
           <Carousel.Item as="div">
-            <div className="img-wrapper">
-              <video autoplay="true" loop="true" playsinline>
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
                 <source src="./assets/upload.webm" type="video/webm" />
                 <source src="./assets/upload.mp4" type="video/mp4" />
               </video>
@@ -55,8 +55,8 @@ const Features = () => {
           </Carousel.Item>
 
           <Carousel.Item as="div">
-            <div className="img-wrapper">
-              <video autoplay="true" loop="true" playsinline>
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
                 <source src="./assets/optionsChange.webm" type="video/webm" />
                 <source src="./assets/optionsChange.mp4" type="video/mp4" />
               </video>
@@ -66,8 +66,8 @@ const Features = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item as="div">
-            <div className="img-wrapper">
-              <video autoplay="true" loop="true" playsinline>
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
                 <source src="./assets/viewChange.webm" type="video/webm" />
                 <source src="./assets/viewChange.mp4" type="video/mp4" />
               </video>

@@ -190,10 +190,12 @@ nav {
     margin: 0;
   }
   .carousel-wrapper {
-    img {
+    height: 100% !important;
+    width: 100% !important;
+    video {
       color: #003459 !important;
-      height: 55%;
-      width: 55%;
+      height: 60%;
+      width: 60%;
       margin-bottom: 15%;
       margin-left: 22%;
       margin-top: 7%;
@@ -230,13 +232,6 @@ nav {
     color: $primary-color;
     padding: 10vh 10vh;
     margin: 0;
-
-    video {
-      width: 50vw;
-      height: auto;
-      -webkit-filter: drop-shadow(5px 5px 5px #222);
-      filter: drop-shadow(5px 5px 5px #222);
-    }
 
     &:nth-last-child(2) {
       justify-content: flex-end;
