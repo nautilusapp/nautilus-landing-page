@@ -194,11 +194,11 @@ nav {
     width: 100% !important;
     video {
       color: #003459 !important;
-      height: 60%;
-      width: 60%;
-      margin-bottom: 15%;
-      margin-left: 22%;
-      margin-top: 7%;
+      height: 55%;
+      width: 55%;
+      margin-bottom: 13% !important;
+      margin-left: 23% !important;
+      margin-top: 4%;
       -webkit-filter: drop-shadow(5px 5px 5px #222);
       filter: drop-shadow(5px 5px 5px #222);
     }
@@ -218,37 +218,9 @@ nav {
   }
   .carousel-caption {
     color: $primary-color;
-    margin-top: 10%;
   }
   .carousel-indicators li {
     background-color: $primary-color !important;
-    margin-top: 10%;
-  }
-
-  figure {
-    height: auto;
-    display: flex;
-    align-items: center;
-    color: $primary-color;
-    padding: 10vh 10vh;
-    margin: 0;
-
-    &:nth-last-child(2) {
-      justify-content: flex-end;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  figcaption {
-    padding: 0 1vw;
-    color: $primary-color;
-    text-align: center;
-    font-size: 2em;
-    margin: 0;
-    width: 40vw;
   }
 }
 
