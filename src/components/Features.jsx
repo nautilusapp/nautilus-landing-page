@@ -61,13 +61,26 @@ const Features = () => {
           </Carousel.Item>
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <img src="./assets/views.png" alt="" className="options" />
+              <img
+                src="./assets/dependsView.png"
+                alt=""
+                className="dependsView"
+              />
             </div>
             <Carousel.Caption>
-              <h2>
-                Choose to view your services by networks or a container
-                dependent view
-              </h2>
+              <h2>View your services by container dependent view</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item as="div">
+            <div className="video-wrapper">
+              <img
+                src="./assets/networksView.png"
+                alt=""
+                className="networksView"
+              />
+            </div>
+            <Carousel.Caption>
+              <h2>View your services grouped by networks</h2>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
