@@ -45,7 +45,7 @@ const Download = () => {
             alt="download-for-mac"
           >
             <FontAwesomeIcon icon={faApple} size="6x" color="#e0e9f1" />
-            <p>Mac OS</p>
+            <p>MacOS</p>
           </a>
         </div>
       </div>
