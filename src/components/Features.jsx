@@ -39,7 +39,10 @@ const Features = () => {
       <div className="figures-wrapper">
         <figure>
           <div className="img-wrapper">
-            <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />
+            <video autoplay="true" loop="true" playsinline>
+              <source src="./assets/upload.webm" type="video/webm" />
+              <source src="./assets/upload.mp4" type="video/mp4" />
+            </video>
           </div>
           <ScrollAnimation animateIn="fadeInRight">
             <div className="caption-wrapper">
@@ -56,18 +59,18 @@ const Features = () => {
             </div>
           </ScrollAnimation>
           <div className="img-wrapper">
-            <img
-              src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
-              alt=""
-            />
+            <video autoplay="true" loop="true" playsinline>
+              <source src="./assets/optionsChange.webm" type="video/webm" />
+              <source src="./assets/optionsChange.mp4" type="video/mp4" />
+            </video>
           </div>
         </figure>
         <figure>
           <div className="img-wrapper">
-            <img
-              src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
-              alt=""
-            />
+            <video autoplay="true" loop="true" playsinline>
+              <source src="./assets/viewChange.webm" type="video/webm" />
+              <source src="./assets/viewChange.mp4" type="video/mp4" />
+            </video>
           </div>
           <ScrollAnimation animateIn="fadeInRight">
             <div className="caption-wrapper">
