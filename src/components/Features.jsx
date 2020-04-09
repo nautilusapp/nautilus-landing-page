@@ -39,15 +39,12 @@ const Features = () => {
           d="M-4,142.333C121.654,142.333,165.952,18,253.846,18 c75.519,0,45.058,101.856-2.538,78.692c25.067,0,25.385-35.538,2.538-35.538c-36.808,0-26.019,109.154,76.154,109.154 s1276,0,1276,0V216H-4V142.333z"
         ></path>
       </svg>
-      <h1>Features</h1>
       <div className="carousel-wrapper">
+        <h1>Features</h1>
         <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/upload.webm" type="video/webm" />
-                <source src="./assets/upload.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/upload-g.gif" alt="" className="update" />
             </div>
             <Carousel.Caption>
               <h2>Upload your Compose file</h2>
@@ -56,10 +53,7 @@ const Features = () => {
 
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/optionsChange.webm" type="video/webm" />
-                <source src="./assets/optionsChange.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/options-g.gif" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>Display your service's info, ports and volumes</h2>
@@ -67,10 +61,7 @@ const Features = () => {
           </Carousel.Item>
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <video autoPlay={true} loop={true} playsInline>
-                <source src="./assets/viewChange.webm" type="video/webm" />
-                <source src="./assets/viewChange.mp4" type="video/mp4" />
-              </video>
+              <img src="./assets/views-g.gif" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>
