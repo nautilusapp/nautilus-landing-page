@@ -1,18 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const version = process.env.REACT_APP_PACKAGE_VERSION;
 
 const Hero = () => {
   let file = '';
-  if (navigator.appVersion.indexOf('Win') !== -1)
+  let operatingSystem = '';
+  if (navigator.appVersion.indexOf('Win') !== -1) {
     file = `Nautilus Setup ${version}.exe`;
-  else if (navigator.appVersion.indexOf('Mac') !== -1)
+    operatingSystem = 'Windows';
+  } else if (navigator.appVersion.indexOf('Mac') !== -1) {
     file = `Nautilus-${version}.dmg`;
-  else if (navigator.appVersion.indexOf('Linux') !== -1)
+    operatingSystem = 'Mac';
+  } else if (navigator.appVersion.indexOf('Linux') !== -1) {
     file = `Nautilus-${version}.AppImage`;
+    operatingSystem = 'Linux';
+  }
 
   const url =
     process.env.NODE_ENV === 'production'
@@ -35,9 +40,9 @@ const Hero = () => {
             </a>
           </button>
           <button>
-            <FontAwesomeIcon icon={faChevronCircleDown} />
+            <FontAwesomeIcon icon={faDownload} />
             <a href={url + file} download>
-              Download
+              Download for {operatingSystem}
             </a>
           </button>
         </div>
