@@ -37,7 +37,7 @@ const Team = () => {
       github: 'https://github.com/michaelbayday',
       linkedIn: 'https://www.linkedin.com/in/michaelxdinh/',
       avatar: './assets/Mike.svg',
-      src: './assets/Mike.svg',
+      src: './assets/Mike.jpg',
     },
   ];
   const profiles = teamProfile.map((profile) => {
