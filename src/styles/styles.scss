@@ -161,6 +161,7 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
+
   .svg-separator {
     display: block;
     background: 0 0;
@@ -187,6 +188,16 @@ nav {
     font-family: $font-fam;
     color: $primary-color;
     margin: 0;
+  }
+  .carousel-control-next-icon {
+    fill: #003459 !important;
+  }
+  .carousel-wrapper {
+    img {
+      color: #003459 !important;
+      height: 50%;
+      width: 50%;
+    }
   }
 
   figure {

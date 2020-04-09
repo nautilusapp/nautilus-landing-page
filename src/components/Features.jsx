@@ -1,6 +1,5 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { Carousel, CarouselItem } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap/';
 
 const Features = () => {
   return (
@@ -47,14 +46,17 @@ const Features = () => {
           </div>
           <ScrollAnimation animateIn="fadeInRight">
         <Carousel>
+      <div className="carousel-wrapper">
+        <Carousel interval="5000">
           <Carousel.Item>
-            <div className="img-wrapper">
-              <img src={process.env.PUBLIC_URL + '/assets/upload.gif'} alt="" />
-            </div>
-
-            <div className="caption-wrapper">
-              <figcaption>Upload your Compose file</figcaption>
-            </div>
+            <img
+              className="d-block w-50"
+              src={process.env.PUBLIC_URL + '/assets/upload.gif'}
+              alt="first-slide"
+            />
+            <Carousel.Caption>
+              <h2>Upload your Compose file</h2>
+            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
         <Carousel.Item>
@@ -94,24 +96,27 @@ const Features = () => {
                 dependent view
               </figcaption>
           </figure>
+          <img
+            className="d-block w-50"
+            src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
+            alt="second-slide"
+          />
+          <Carousel.Caption>
+            <h2>Display your service's info, ports and volumes</h2>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <figure>
-            <div className="img-wrapper">
-              <img
-                src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
-                alt=""
-              />
-            </div>
-            <ScrollAnimation animateIn="fadeInRight">
-              <div className="caption-wrapper">
-                <figcaption>
-                  Choose to view your services by networks or a container
-                  dependent view
-                </figcaption>
-              </div>
-            </ScrollAnimation>
-          </figure>
+          <img
+            className="d-block w-50"
+            src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
+            alt="third-slide"
+          />
+          <Carousel.Caption>
+            <h2>
+              Choose to view your services by networks or a container dependent
+              view
+            </h2>
+          </Carousel.Caption>
         </Carousel.Item>
       </div>
     </section>
