@@ -40,47 +40,38 @@ const Features = () => {
         ></path>
       </svg>
       <h1>Features</h1>
-      <div className="figures-wrapper">
-        <figure>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/upload.webm" type="video/webm" />
-              <source src="./assets/upload.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <ScrollAnimation animateIn="fadeInRight">
-        <Carousel>
       <div className="carousel-wrapper">
-        <Carousel
-          activeIndex={index}
-          onSelect={handleSelect}
-          interval="5000"
-          pause="hover"
-        >
+        <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
           <Carousel.Item as="div">
-            <img
-              src={process.env.PUBLIC_URL + '/assets/upload.gif'}
-              alt="first-slide"
-            />
+            <div className="img-wrapper">
+              <video autoplay="true" loop="true" playsinline>
+                <source src="./assets/upload.webm" type="video/webm" />
+                <source src="./assets/upload.mp4" type="video/mp4" />
+              </video>
+            </div>
             <Carousel.Caption>
               <h2>Upload your Compose file</h2>
             </Carousel.Caption>
           </Carousel.Item>
 
           <Carousel.Item as="div">
-            <img
-              src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
-              alt="second-slide"
-            />
+            <div className="img-wrapper">
+              <video autoplay="true" loop="true" playsinline>
+                <source src="./assets/optionsChange.webm" type="video/webm" />
+                <source src="./assets/optionsChange.mp4" type="video/mp4" />
+              </video>
+            </div>
             <Carousel.Caption>
               <h2>Display your service's info, ports and volumes</h2>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item as="div">
-            <img
-              src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
-              alt="third-slide"
-            />
+            <div className="img-wrapper">
+              <video autoplay="true" loop="true" playsinline>
+                <source src="./assets/viewChange.webm" type="video/webm" />
+                <source src="./assets/viewChange.mp4" type="video/mp4" />
+              </video>
+            </div>
             <Carousel.Caption>
               <h2>
                 Choose to view your services by networks or a container
@@ -89,68 +80,6 @@ const Features = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-<<<<<<< HEAD
-        <Carousel.Item>
-          <figure>
-            <ScrollAnimation animateIn="fadeInLeft">
-              <div className="caption-wrapper">
-                <figcaption className="second-caption">
-                  Display your service's info, ports and volumes
-                </figcaption>
-              </div>
-            </ScrollAnimation>
-            <div className="img-wrapper">
-              <img
-                src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
-                alt=""
-              />
-            </div>
-          </ScrollAnimation>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/optionsChange.webm" type="video/webm" />
-              <source src="./assets/optionsChange.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </figure>
-        <figure>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/viewChange.webm" type="video/webm" />
-              <source src="./assets/viewChange.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <ScrollAnimation animateIn="fadeInRight">
-            <div className="caption-wrapper">
-              <figcaption>
-                Choose to view your services by networks or a container
-                dependent view
-              </figcaption>
-          </figure>
-          <img
-            className="d-block w-50"
-            src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
-            alt="second-slide"
-          />
-          <Carousel.Caption>
-            <h2>Display your service's info, ports and volumes</h2>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-50"
-            src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
-            alt="third-slide"
-          />
-          <Carousel.Caption>
-            <h2>
-              Choose to view your services by networks or a container dependent
-              view
-            </h2>
-          </Carousel.Caption>
-        </Carousel.Item>
-=======
->>>>>>> styled slideshow
       </div>
     </section>
   );
