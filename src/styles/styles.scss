@@ -161,7 +161,6 @@ nav {
   background-color: rgb(246, 246, 246);
   margin-top: 20vh;
   position: relative;
-
   .svg-separator {
     display: block;
     background: 0 0;
@@ -189,38 +188,38 @@ nav {
     color: $primary-color;
     margin: 0;
   }
-  .carousel-wrapper {
-    height: 100% !important;
-    width: 100% !important;
+
+  figure {
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    padding: 10vh 10vh;
+    margin: 0;
+
     video {
-      color: #003459 !important;
-      height: 55%;
-      width: 55%;
-      margin-bottom: 13% !important;
-      margin-left: 23% !important;
-      margin-top: 4%;
+      width: 50vw;
+      height: auto;
       -webkit-filter: drop-shadow(5px 5px 5px #222);
       filter: drop-shadow(5px 5px 5px #222);
     }
+
+    &:nth-last-child(2) {
+      justify-content: flex-end;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  .carousel-control-prev-icon {
-    width: 40% !important;
-    height: 40% !important;
-    background-image: url(/assets/arrow.svg);
-    transform: rotate(90deg) !important;
-  }
-  .carousel-control-next-icon {
-    width: 40% !important;
-    height: 40% !important;
-    background-image: url(/assets/arrow.svg);
-    transform: rotate(270deg) !important;
-  }
-  .carousel-caption {
+  figcaption {
+    padding: 0 1vw;
     color: $primary-color;
-  }
-  .carousel-indicators li {
-    background-color: $primary-color !important;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    width: 40vw;
   }
 }
 
