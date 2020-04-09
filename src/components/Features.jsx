@@ -44,7 +44,7 @@ const Features = () => {
         <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <img src="./assets/upload-g.gif" alt="" className="update" />
+              <img src="./assets/upload.png" alt="" className="update" />
             </div>
             <Carousel.Caption>
               <h2>Upload your Compose file</h2>
@@ -53,7 +53,7 @@ const Features = () => {
 
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <img src="./assets/options-g.gif" alt="" className="options" />
+              <img src="./assets/options.png" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>Display your service's info, ports and volumes</h2>
@@ -61,7 +61,7 @@ const Features = () => {
           </Carousel.Item>
           <Carousel.Item as="div">
             <div className="video-wrapper">
-              <img src="./assets/views-g.gif" alt="" className="options" />
+              <img src="./assets/views.png" alt="" className="options" />
             </div>
             <Carousel.Caption>
               <h2>
