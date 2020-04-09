@@ -189,15 +189,29 @@ nav {
     color: $primary-color;
     margin: 0;
   }
-  .carousel-control-next-icon {
-    fill: #003459 !important;
-  }
   .carousel-wrapper {
     img {
       color: #003459 !important;
-      height: 50%;
-      width: 50%;
+      height: 60%;
+      width: 60%;
+      margin-bottom: 15%;
+      margin-left: 22%;
+      margin-top: 7%;
     }
+  }
+
+  .carousel-control-prev-icon {
+    background-color: $primary-color !important;
+  }
+  .carousel-control-next-icon {
+    background-color: $primary-color !important;
+  }
+  .carousel-caption {
+    color: $primary-color;
+  }
+  .carousel-indicators li {
+    background-color: $primary-color !important;
+    margin-top: 10%;
   }
 
   figure {

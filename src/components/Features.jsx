@@ -1,7 +1,11 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap/';
+import React, { useState } from 'react';
+import { Carousel } from 'react-bootstrap';
 
 const Features = () => {
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   return (
     <section id="features">
       <svg
@@ -47,10 +51,9 @@ const Features = () => {
           <ScrollAnimation animateIn="fadeInRight">
         <Carousel>
       <div className="carousel-wrapper">
-        <Carousel interval="5000">
-          <Carousel.Item>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
+          <Carousel.Item as="div">
             <img
-              className="d-block w-50"
               src={process.env.PUBLIC_URL + '/assets/upload.gif'}
               alt="first-slide"
             />
@@ -58,7 +61,30 @@ const Features = () => {
               <h2>Upload your Compose file</h2>
             </Carousel.Caption>
           </Carousel.Item>
+
+          <Carousel.Item as="div">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/optionsChange.gif'}
+              alt="second-slide"
+            />
+            <Carousel.Caption>
+              <h2>Display your service's info, ports and volumes</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item as="div">
+            <img
+              src={process.env.PUBLIC_URL + '/assets/viewChange.gif'}
+              alt="third-slide"
+            />
+            <Carousel.Caption>
+              <h2>
+                Choose to view your services by networks or a container
+                dependent view
+              </h2>
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
+<<<<<<< HEAD
         <Carousel.Item>
           <figure>
             <ScrollAnimation animateIn="fadeInLeft">
@@ -118,6 +144,8 @@ const Features = () => {
             </h2>
           </Carousel.Caption>
         </Carousel.Item>
+=======
+>>>>>>> styled slideshow
       </div>
     </section>
   );
