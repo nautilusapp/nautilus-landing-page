@@ -1,6 +1,6 @@
 {
   "name": "nautilus-landing-page",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "Landing page for Nautilus: A Docker Compose Charting Tool",
   "main": "index.js",
   "repository": {
@@ -28,8 +28,8 @@
     "typescript": "^3.8.2"
   },
   "scripts": {
-    "start": "cross-env REACT_APP_PACKAGE_VERSION=1.0.0 react-scripts start",
-    "build": "cross-env REACT_APP_PACKAGE_VERSION=1.0.0 react-scripts build",
+    "start": "cross-env REACT_APP_PACKAGE_VERSION=$npm_package_version react-scripts start",
+    "build": "cross-env REACT_APP_PACKAGE_VERSION=$npm_package_version react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

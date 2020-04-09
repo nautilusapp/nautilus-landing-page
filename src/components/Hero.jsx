@@ -18,11 +18,10 @@ const Hero = () => {
     process.env.NODE_ENV === 'production'
       ? './release/'
       : 'https://s3-us-west-1.amazonaws.com/nautilusdev.com/release/';
-
   return (
     <section id="hero">
       <div className="animated bounceInLeft">
-        <h2>Nautilus</h2>
+        <h1>Nautilus</h1>
         <p>A Docker Compose Charting Tool</p>
         <div className="button-wrapper">
           <button>

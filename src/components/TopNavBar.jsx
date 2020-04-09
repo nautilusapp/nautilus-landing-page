@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link as LinkScroll } from 'react-scroll';
 import { Navbar, Nav, Form, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSlack } from '@fortawesome/free-brands-svg-icons';
 
 const TopNavbar = () => {
   return (
@@ -22,15 +24,28 @@ const TopNavbar = () => {
           <LinkScroll to="features" smooth={true}>
             Features
           </LinkScroll>
-          <LinkScroll to="contribute" smooth={true}>
-            Contribute
+          <LinkScroll to="community" smooth={true}>
+            Community
           </LinkScroll>
           <LinkScroll to="team" smooth={true}>
             Team
           </LinkScroll>
         </Nav>
+        <Navbar.Text>Join us on Slack!</Navbar.Text>
+        <Nav.Link
+          href="https://join.slack.com/t/nautiluscommunity/shared_invite/zt-deax51kl-PiLLyBiEc0gVFKM_XrwNKQ"
+          target="Blank"
+        >
+          <FontAwesomeIcon
+            className="slack-nav-icon"
+            size="2x"
+            icon={faSlack}
+          />
+        </Nav.Link>
         <Form inline>
-          <Button>Download</Button>
+          <LinkScroll to="download-title" smooth={true}>
+            <Button>Download</Button>
+          </LinkScroll>
         </Form>
       </Navbar.Collapse>
     </Navbar>
