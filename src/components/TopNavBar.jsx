@@ -32,19 +32,21 @@ const TopNavbar = () => {
           </LinkScroll>
         </Nav>
         <Navbar.Text>Join us on Slack!</Navbar.Text>
-        <Nav.Link
-          href="https://join.slack.com/t/nautiluscommunity/shared_invite/zt-deax51kl-PiLLyBiEc0gVFKM_XrwNKQ"
-          target="Blank"
-        >
-          <FontAwesomeIcon
-            className="slack-nav-icon"
-            size="2x"
-            icon={faSlack}
-          />
-        </Nav.Link>
+        <div className="slackLink">
+          <Nav.Link
+            href="https://join.slack.com/t/nautiluscommunity/shared_invite/zt-deax51kl-PiLLyBiEc0gVFKM_XrwNKQ"
+            target="Blank"
+          >
+            <FontAwesomeIcon
+              className="slack-nav-icon"
+              size="2x"
+              icon={faSlack}
+            />
+          </Nav.Link>
+        </div>
         <Form inline>
           <LinkScroll to="download-title" smooth={true}>
-            <Button>Download</Button>
+            <Button className="downloadButton">Download</Button>
           </LinkScroll>
         </Form>
       </Navbar.Collapse>

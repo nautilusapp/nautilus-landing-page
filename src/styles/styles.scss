@@ -66,14 +66,25 @@ nav {
     }
   }
 
-  Button {
+  .slackLink {
+    display: flex;
+    justify-content: center;
+    a {
+      padding-top: 4px;
+      padding-bottom: 0;
+    }
+  }
+
+  .btn-primary {
     margin-right: 10vh;
     background-color: $primary-color !important;
     font-size: 0.9em !important;
     border-radius: 5px !important;
+    border-color: $primary-color !important;
 
     &:hover {
       background-color: $secondary-color !important;
+      border-color: $secondary-color !important;
     }
   }
 }
@@ -121,6 +132,7 @@ nav {
       border-radius: 5px;
       margin: 20px;
       color: $primary-color;
+      padding: 0 10px;
 
       &:first-child {
         margin-left: 0px;
