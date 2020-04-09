@@ -1,7 +1,11 @@
-import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React, { useState } from 'react';
+import { Carousel } from 'react-bootstrap';
 
 const Features = () => {
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   return (
     <section id="features">
       <svg
@@ -36,51 +40,46 @@ const Features = () => {
         ></path>
       </svg>
       <h1>Features</h1>
-      <div className="figures-wrapper">
-        <figure>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/upload.webm" type="video/webm" />
-              <source src="./assets/upload.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <ScrollAnimation animateIn="fadeInRight">
-            <div className="caption-wrapper">
-              <figcaption>Upload your Compose file</figcaption>
+      <div className="carousel-wrapper">
+        <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
+          <Carousel.Item as="div">
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
+                <source src="./assets/upload.webm" type="video/webm" />
+                <source src="./assets/upload.mp4" type="video/mp4" />
+              </video>
             </div>
-          </ScrollAnimation>
-        </figure>
-        <figure>
-          <ScrollAnimation animateIn="fadeInLeft">
-            <div className="caption-wrapper">
-              <figcaption className="second-caption">
-                Display your service's info, ports and volumes
-              </figcaption>
+            <Carousel.Caption>
+              <h2>Upload your Compose file</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item as="div">
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
+                <source src="./assets/optionsChange.webm" type="video/webm" />
+                <source src="./assets/optionsChange.mp4" type="video/mp4" />
+              </video>
             </div>
-          </ScrollAnimation>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/optionsChange.webm" type="video/webm" />
-              <source src="./assets/optionsChange.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </figure>
-        <figure>
-          <div className="img-wrapper">
-            <video autoplay="true" loop="true" playsinline>
-              <source src="./assets/viewChange.webm" type="video/webm" />
-              <source src="./assets/viewChange.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <ScrollAnimation animateIn="fadeInRight">
-            <div className="caption-wrapper">
-              <figcaption>
+            <Carousel.Caption>
+              <h2>Display your service's info, ports and volumes</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item as="div">
+            <div className="video-wrapper">
+              <video autoPlay={true} loop={true} playsInline>
+                <source src="./assets/viewChange.webm" type="video/webm" />
+                <source src="./assets/viewChange.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <Carousel.Caption>
+              <h2>
                 Choose to view your services by networks or a container
                 dependent view
-              </figcaption>
-            </div>
-          </ScrollAnimation>
-        </figure>
+              </h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     </section>
   );

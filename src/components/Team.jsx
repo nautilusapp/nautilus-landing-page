@@ -30,7 +30,7 @@ const Team = () => {
       github: 'https://github.com/dannyscheiner',
       linkedIn: 'https://www.linkedin.com/in/dannyscheiner/',
       avatar: './assets/dannyboy.svg',
-      src: './assets/Danny.svg',
+      src: './assets/Danny-Scheiner.jpg',
     },
     {
       name: 'Michael Dinh',
