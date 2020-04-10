@@ -28,6 +28,11 @@ const Hero = () => {
       <div className="animated bounceInLeft">
         <h1>Nautilus</h1>
         <p>A Docker Compose Charting Tool</p>
+        <p className="one-liner">
+          An interactive D3 visualizing tool that dynamically renders essential
+          Docker Compose properties onto an Electron GUI, built to reduce
+          cognitive load and simplify the development environment for engineers.
+        </p>
         <div className="button-wrapper">
           <button>
             <FontAwesomeIcon icon={faGithub} />
