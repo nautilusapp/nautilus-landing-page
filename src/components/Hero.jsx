@@ -19,6 +19,12 @@ const Hero = () => {
     operatingSystem = 'Linux';
   }
 
+  const googleAnalytics = () => {
+    gtag('event', `${operatingSystem}-download`, {
+      event_category: 'downloads',
+    });
+  };
+
   const url =
     process.env.NODE_ENV === 'production'
       ? './release/'
