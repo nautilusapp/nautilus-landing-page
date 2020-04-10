@@ -190,6 +190,7 @@ nav {
       margin: 20px;
       color: $primary-color;
       padding: 0 10px;
+      background-color: $fourth-color;
 
       &:first-child {
         margin-left: 0px;
@@ -307,13 +308,7 @@ nav {
     .video-wrapper {
       display: flex;
       img {
-        color: $primary-color !important;
-        width: 56vw;
-        height: 20vh;
-        margin-bottom: 34vh !important;
-        margin-left: 22vw !important;
-        -webkit-filter: drop-shadow(5px 5px 5px #222);
-        filter: drop-shadow(5px 5px 5px #222);
+        width: 56vw !important;
       }
     }
 
