@@ -15,8 +15,8 @@ const Download = () => {
       : 'https://s3-us-west-1.amazonaws.com/nautilusdev.com/release/';
 
   const googleAnalytics = (e) => {
-    const os = e.target.id;
-    gtag('event', `${os}-download`, {
+    const os = e.currentTarget.id;
+    window.gtag('event', `${os}-download`, {
       event_category: 'downloads',
     });
   };

@@ -20,7 +20,8 @@ const Hero = () => {
   }
 
   const googleAnalytics = () => {
-    gtag('event', `${operatingSystem}-download`, {
+    // @ts-ignore
+    window.gtag('event', `${operatingSystem}-download`, {
       event_category: 'downloads',
     });
   };
@@ -47,7 +48,7 @@ const Hero = () => {
           </button>
           <button>
             <FontAwesomeIcon icon={faDownload} />
-            <a href={url + file} download>
+            <a href={url + file} download onClick={googleAnalytics}>
               Download for {operatingSystem}
             </a>
           </button>
