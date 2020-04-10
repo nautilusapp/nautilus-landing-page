@@ -41,7 +41,7 @@ const Features = () => {
       </svg>
       <div className="carousel-wrapper">
         <h1>Features</h1>
-        <Carousel activeIndex={index} onSelect={handleSelect} interval="5000">
+        <Carousel activeIndex={index} onSelect={handleSelect} interval="3000">
           <Carousel.Item as="div">
             <div className="video-wrapper">
               <img src="./assets/upload.png" alt="" className="update" />
