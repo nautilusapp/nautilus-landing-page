@@ -304,7 +304,46 @@ nav {
         font-size: 1.3em;
       }
     }
+    .video-wrapper {
+      display: flex;
+      img {
+        color: $primary-color !important;
+        width: 56vw;
+        height: 20vh;
+        margin-bottom: 34vh !important;
+        margin-left: 22vw !important;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+      }
+    }
+
+    ol {
+      margin-top: 0;
+      margin-bottom: 20vh;
+      padding-bottom: 14vh;
+    }
+    a {
+      width: 22vw;
+    }
+
+    .carousel-control-prev-icon {
+      width: 4vw !important;
+      height: 4vh !important;
+      background-image: url(/assets/arrow-svg.svg);
+      transform: rotate(90deg) !important;
+      margin-right: 5vw;
+      margin-bottom: 32vh;
+    }
+    .carousel-control-next-icon {
+      width: 4vw !important;
+      height: 4vh !important;
+      background-image: url(/assets/arrow-svg.svg);
+      transform: rotate(270deg) !important;
+      margin-left: 5vw;
+      margin-bottom: 32vh;
+    }
   }
+
   .carousel-caption {
     color: $primary-color;
     padding-bottom: 6vh !important;
