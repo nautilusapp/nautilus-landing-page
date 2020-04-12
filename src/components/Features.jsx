@@ -47,7 +47,7 @@ const Features = () => {
               <img src="./assets/upload.png" alt="" className="update" />
             </div>
             <Carousel.Caption>
-              <h2>Upload your Compose file</h2>
+              <h2>Open your Compose file</h2>
             </Carousel.Caption>
           </Carousel.Item>
 
