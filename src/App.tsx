@@ -1,8 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import './styles/styles.scss';
-import 'animate.css/animate.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import components
 import TopNavBar from './components/TopNavBar';
 import Hero from './components/Hero';
 import Features from './components/Features.jsx';
