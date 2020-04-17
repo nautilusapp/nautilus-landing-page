@@ -15,8 +15,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint-plugin-flowtype": "^3.13.0",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
@@ -30,7 +34,7 @@
   "scripts": {
     "start": "cross-env REACT_APP_PACKAGE_VERSION=$npm_package_version react-scripts start",
     "build": "cross-env REACT_APP_PACKAGE_VERSION=$npm_package_version react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -49,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.9.0",
     "cross-env": "^7.0.2",
     "node-sass": "^4.13.1"
   }
