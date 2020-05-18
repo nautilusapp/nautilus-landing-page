@@ -44,7 +44,7 @@ const Hero = () => {
           <button>
             <FontAwesomeIcon icon={faGithub} />
             <a
-              href="https://github.com/oslabs-beta/nautilus"
+              href="https://github.com/open-source-labs/nautilus"
               alt="oslabs-nautilus-github-page"
               target="Blank"
             >
