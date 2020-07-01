@@ -16,7 +16,7 @@ const Community = () => {
             <ScrollAnimation animateIn="slideInLeft">
               <figcaption>
                 <a
-                  href="https://github.com/open-source-labs/nautilus"
+                  href="https://github.com/nautilusapp/nautilus"
                   target="Blank"
                   alt="Nautilus GitHub page"
                 >
